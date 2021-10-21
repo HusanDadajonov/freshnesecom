@@ -742,7 +742,7 @@ img {
 
 @media screen and (max-width: 992px) {
   .nav {
-    position: fixed;
+    position: absolute;
     z-index: 100;
     width: 300px;
     left: 0;
