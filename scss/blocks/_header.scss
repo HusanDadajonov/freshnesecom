@@ -1,0 +1,56 @@
+.header {
+    padding: 40px 0;
+
+    &__container{
+        position: relative;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background:none;   
+        cursor: pointer;
+        position: relative;
+        
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+    }
+
+    &__count {
+        width: 12px;
+        height: 12px;
+        font-size: 9px;
+        position:absolute;
+        bottom: 0;
+        left: 3px;
+        background: #e5704b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width:992px){
+    .header{
+        padding-bottom: 80px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .header__logo{
+        width: 150px;
+        height: 13px;
+    }
+}
+
+
+@media screen and (max-width:412px){
+    .header__btn{
+        margin-right: 7px !important;
+    }
+}

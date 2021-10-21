@@ -1,0 +1,38 @@
+.header__menu{
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: relative;
+    display: none;
+  }
+  .line-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .line{
+    width: 25px;
+    height: 2px;
+    display: inline-block;
+    background-color: #000;
+    margin-bottom: 5px;
+    transition: all 0.4s ease;
+  }
+  .rotate-line1{
+    transform: rotate(45deg);
+  }
+  .rotate-line3{
+    transform: rotate(135deg) translate(-5px,5px);
+  }
+  .line2{
+    display: block;
+  }
+  .remove-line{
+    display: none;
+  }
+
+@media screen and (max-width:992px){
+  .header__menu{
+    display: block;
+  }
+}

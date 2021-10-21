@@ -1,0 +1,71 @@
+.drop-down {
+    @include list-unstyled();
+    position:absolute;
+    top:30px;
+    display:none;
+    z-index: 100;
+
+    &__item {
+        width: 150px;
+        background:#000;
+        opacity: 0.7;
+        padding: 10px;
+        border-radius:0 10px 10px 0;
+        transform: translate(0,50px);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        animation-name: drop-item;
+        animation-duration: 0.4s;
+        animation-fill-mode: both;
+        position: relative;
+
+        &::before{
+            content: "";
+            position:absolute;
+            width: 5px;
+            height: 100%;
+            background: rgb(75, 72, 72);
+            top: 0;
+            left: 0;
+            transition: width 0.4s ease;
+        }
+
+        &:hover::before{
+            width: 15px;
+        }
+
+        &:hover .drop-down__link{
+            padding-left: 15px;
+        }
+
+        @for $item from 1 through 5 {
+            &:nth-child(#{$item}) {
+                animation-delay: $item * 0.1s;
+            }
+        }
+    }
+
+    @keyframes drop-item {
+        100%{
+            transform: translate(0,0);
+            opacity: 1;
+        }
+    }
+
+    &__link {
+        color: #fff;
+        padding: 10px 70px 10px 10px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        text-decoration: none;
+        transition: padding 0.4s ease;
+    }
+}
+
+
+@media screen and (max-width:992px){
+    .drop-down{
+        display: none !important;
+    }
+}

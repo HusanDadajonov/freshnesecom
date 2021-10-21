@@ -1,0 +1,45 @@
+.catergory-menu {
+    @include list-unstyled;
+
+    &__item:not(:last-child){
+        margin-bottom: 12px;
+    }
+
+    &__item:last-child{
+        margin-top: 36px;
+    }
+
+    &__title {
+        margin: 0 0 16px 0;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: $color-primary;
+    }
+
+    &__link {
+        font-family: $font-open-sans;
+        font-size: 14px;
+        line-height: 19px;
+        color: $texts-color;
+    }
+
+    &__btn{
+        background: #f5f5f5;
+        border-radius: 12px;
+        text-decoration: none;
+        position: relative;
+        padding: 12px 38px 12px 16px;
+
+        &::after{
+            content: "";
+            width: 16px;
+            height: 16px;
+            position:absolute;
+            top: 50%;
+            transform: translate(5px,-30%);
+            background-image: url("../../img/btn-arow.svg");
+            background-repeat: no-repeat;
+        }
+    }
+}

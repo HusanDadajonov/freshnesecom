@@ -1,0 +1,72 @@
+.form {
+    background: #f9f9f9;
+    border: 1px solid #d1d1d1;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 16px;
+    
+    &__select {
+        padding: 5px;
+        max-width: 130px;
+        border:none;
+        background:none;
+        appearance: none;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 22px;
+        color: $color-primary;
+        position: relative;
+        background-image: url("../../img/select-arrow.svg");
+        background-repeat: no-repeat;
+        background-position: center right;
+        margin-right: 24px;
+    }
+    &__input {
+        background: none;
+        border: none;
+        padding: 3px 3px 3px 24px; 
+        border-left: 2px solid #d1d1d1;
+
+        &::placeholder{
+            font-family: $font-open-sans;
+            font-weight:lighter;
+            font-size: 14px;
+            line-height: 19px;
+            color: #a9a9a9;
+        }
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    &__btn{
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (max-width:992px){
+    .form{
+        position:absolute;
+        top: 65px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .form__select{
+        display: none;
+    }
+    .form__input{
+        border-left: none;
+        padding-left: 3px;
+    }
+}
