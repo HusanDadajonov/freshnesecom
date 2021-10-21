@@ -455,6 +455,10 @@ img {
   color: #151515;
 }
 
+.hidden-scrol {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 992px) {
   .header-top {
     position: fixed;
