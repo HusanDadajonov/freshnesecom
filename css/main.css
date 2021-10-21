@@ -744,7 +744,7 @@ img {
   .nav {
     position: absolute;
     z-index: 100;
-    width: 300px;
+    width: 250px;
     left: 0;
     bottom: 50px;
     -webkit-transform: translate(-100%, 0);
@@ -767,7 +767,6 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 250px;
   }
   .nav__link {
     color: #fff !important;

@@ -51,7 +51,7 @@
     .nav{
         position:absolute;
         z-index: 100;
-        width: 300px;
+        width: 250px;
         left: 0;
         bottom: 50px;
         transform: translate(-100%,0);
@@ -66,7 +66,6 @@
     }
     .nav__list{
         flex-direction: column;
-        width: 250px;
     }
     .nav__link{
         color: #fff !important;
