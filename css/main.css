@@ -476,8 +476,8 @@ img {
   .header-top {
     position: fixed;
     background: #fff;
-    -webkit-box-shadow: 0 0 18px 0;
-            box-shadow: 0 0 18px 0;
+    -webkit-box-shadow: 0 0 10px 0;
+            box-shadow: 0 0 10px 0;
     height: 110%;
     z-index: 100;
     width: 250px;
@@ -820,10 +820,9 @@ img {
 
 .drop-down__item {
   width: 150px;
-  background: #54bd0e;
+  background: #f9f9f9;
   opacity: 0.7;
   padding: 10px;
-  border-radius: 0 5px 5px 0;
   -webkit-transform: translate(0, 50px);
           transform: translate(0, 50px);
   opacity: 0;
@@ -843,7 +842,7 @@ img {
   position: absolute;
   width: 5px;
   height: 100%;
-  background: #000;
+  background: #07bdf5;
   top: 0;
   left: 0;
   -webkit-transition: width 0.4s ease;
@@ -900,7 +899,7 @@ img {
 }
 
 .drop-down__link {
-  color: #fff;
+  color: #000;
   padding: 10px 70px 10px 10px;
   font-weight: 500;
   font-size: 15px;
@@ -1204,7 +1203,7 @@ img {
 }
 
 .price__btn:hover {
-  background: transparent;
+  background: #fff;
   color: #46760a;
 }
 

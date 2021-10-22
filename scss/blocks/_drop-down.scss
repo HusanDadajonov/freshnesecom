@@ -7,10 +7,9 @@
 
     &__item {
         width: 150px;
-        background:rgb(84, 189, 14);
+        background:#f9f9f9;
         opacity: 0.7;
         padding: 10px;
-        border-radius:0 5px 5px 0;
         transform: translate(0,50px);
         opacity: 0;
         transition: opacity 0.4s ease;
@@ -24,7 +23,7 @@
             position:absolute;
             width: 5px;
             height: 100%;
-            background:#000;
+            background:rgb(7, 189, 245);
             top: 0;
             left: 0;
             transition: width 0.4s ease;
@@ -53,7 +52,7 @@
     }
 
     &__link {
-        color: #fff;
+        color: #000;
         padding: 10px 70px 10px 10px;
         font-weight: 500;
         font-size: 15px;
