@@ -475,7 +475,7 @@ img {
 @media screen and (max-width: 992px) {
   .header-top {
     position: fixed;
-    background: #000;
+    background: #fff;
     height: 100%;
     z-index: 100;
     width: 250px;
@@ -514,7 +514,7 @@ img {
     margin-bottom: 10px;
   }
   .header-top__link {
-    color: #fff;
+    color: #000;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
   }
@@ -776,7 +776,6 @@ img {
 @media screen and (max-width: 992px) {
   .nav {
     position: fixed;
-    background: #000 !important;
     z-index: 100;
     width: 250px;
     left: 0;
@@ -801,9 +800,6 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .nav__link {
-    color: #fff !important;
   }
   .nav__container {
     padding: 0;

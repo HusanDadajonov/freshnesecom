@@ -50,7 +50,6 @@
 @media screen and (max-width:992px){
     .nav{
         position:fixed;
-        background: #000 !important;
         z-index: 100;
         width: 250px;
         left: 0;
@@ -67,9 +66,6 @@
     }
     .nav__list{
         flex-direction: column;
-    }
-    .nav__link{
-        color: #fff !important;
     }
     .nav__container{
         padding: 0;

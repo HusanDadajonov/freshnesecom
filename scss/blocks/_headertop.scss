@@ -48,7 +48,7 @@
 @media screen and (max-width:992px){
     .header-top {
         position:fixed;
-        background: #000;
+        background: #fff;
         height: 100%;
         z-index: 100;
         width: 250px;
@@ -79,7 +79,7 @@
         margin-bottom: 10px;
     }
     .header-top__link {
-        color: #fff;
+        color: #000;
         font-family: $font-stack;
         font-size: 15px;
     }
