@@ -1,0 +1,23 @@
+.product {
+    padding: 64px 0;
+
+    &__col {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &__col:nth-child(2),
+    &__col:nth-child(3),
+    &__col:nth-child(4){
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width:992px){
+    .product__col{
+        margin-bottom: 50px;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
