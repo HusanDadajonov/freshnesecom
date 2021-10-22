@@ -476,9 +476,9 @@ img {
   .header-top {
     position: fixed;
     background: #fff;
-    -webkit-box-shadow: 0 0 20px 0;
-            box-shadow: 0 0 20px 0;
-    height: 150%;
+    -webkit-box-shadow: 0 0 18px 0;
+            box-shadow: 0 0 18px 0;
+    height: 110%;
     z-index: 100;
     width: 250px;
     left: 0;
@@ -820,7 +820,7 @@ img {
 
 .drop-down__item {
   width: 150px;
-  background: #000;
+  background: #54bd0e;
   opacity: 0.7;
   padding: 10px;
   border-radius: 0 5px 5px 0;
@@ -843,7 +843,7 @@ img {
   position: absolute;
   width: 5px;
   height: 100%;
-  background: #4b4848;
+  background: #000;
   top: 0;
   left: 0;
   -webkit-transition: width 0.4s ease;
