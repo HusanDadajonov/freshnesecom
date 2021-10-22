@@ -696,6 +696,26 @@ img {
   .form__input {
     border-left: none;
     padding-left: 3px;
+    width: 150px;
+  }
+  .form__input::-webkit-input-placeholder {
+    font-size: 9px;
+  }
+  .form__input:-ms-input-placeholder {
+    font-size: 9px;
+  }
+  .form__input::-ms-input-placeholder {
+    font-size: 9px;
+  }
+  .form__input::placeholder {
+    font-size: 9px;
+  }
+  .form {
+    max-width: 200px;
+  }
+  .form__btn img {
+    width: 13px;
+    height: 13px;
   }
 }
 
