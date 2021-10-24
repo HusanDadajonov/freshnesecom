@@ -1,0 +1,51 @@
+.vegatable {
+
+    &__img-box {
+        max-width: 270px;
+        border-radius: 12px;
+        overflow: hidden;
+        margin-bottom: 24px;
+    }
+
+    &__tips {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: $texts-color;
+        background: #f4f8ec;
+        border-radius: 12px;
+        padding: 0 8px;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        margin: 0 0 16px 0;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: $color-primary;
+    }
+
+    &__author,
+    &__time{
+        font-size: 12px;
+        line-height: 16px;
+        color:$color-primary;
+    }
+
+    &__time {
+        margin-left: 16px;
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .vegatable__img-box{
+        max-width: 100%;
+    }  
+    .vegatable__img-box img{
+        width: 100%;
+    }
+}
+

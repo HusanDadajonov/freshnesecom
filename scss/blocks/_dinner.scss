@@ -1,0 +1,77 @@
+.dinner {
+    height: 400px;
+    background-image: url("../../img/dinner-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 24px;
+
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #000;
+        position:absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        opacity: 0.3;
+    }
+
+
+    &__tips {
+        padding: 0 8px;
+        position:absolute;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color:$texts-color;
+        background: #f4f8ec;
+        border-radius: 12px;
+        left: 24px;
+        top: 24px;
+        z-index: 1;
+    }
+
+    &__title {
+        margin: 0 0 8px 0;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+        color: #fff;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__row {
+    }
+
+    &__img {
+        margin-right: 8px;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__author,
+    &__time {
+        font-size: 12px;
+        line-height: 16px;
+        color: #fff;
+        position: relative;
+        z-index: 2;
+    }
+    &__time{
+        margin-left: 15px;
+    }
+}
+.middli-xs {
+}
+.col-md-3 {
+}
+.col-md-4 {
+}

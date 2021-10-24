@@ -1,0 +1,33 @@
+.blog {
+    padding: 64px 0;
+
+    &__col{
+        padding-left: 0;
+        padding-right: 0;
+
+        &:nth-child(1){
+            padding-right: 16px;
+        }
+        &:nth-child(2){
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        &:nth-child(3){
+            padding-left: 16px;
+        }
+    }
+}
+
+
+@media screen and (max-width:992px){
+    .blog__col {
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .blog__col {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}

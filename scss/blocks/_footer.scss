@@ -1,0 +1,17 @@
+.footer {
+    padding: 64px 0;
+
+    &__list,
+    &__product-tags{
+        @include list-unstyled;
+        margin-bottom: 48px;
+    }
+
+    &__desc{
+        font-family: $font-open-sans;
+        margin: 0;
+        font-size: 14px;
+        line-height: 19px;
+        color: $color-primary;
+    }
+}

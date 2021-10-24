@@ -1,0 +1,30 @@
+.customers {
+    padding: 64px 0;
+
+    &__container{
+        margin-bottom: 32px;
+    }
+
+    &__title {
+        margin: 0;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: $color-primary;
+    }
+    
+    &__btn{
+        position: relative;
+
+        &::after{
+            content: "";
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: 50%;
+            transform: translate(8px, -25%);
+            background-image: url(../../img/banner-arrow.svg);
+            background-repeat: no-repeat;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.salats {
+
+    &__row{
+        margin-bottom: 32px;
+    }
+
+    &__title {
+        max-width: 225px;
+        margin: 0 0 16px 0;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        color:$color-primary;
+    }
+
+    &__img-box {
+        max-width: 96px;
+        height: 96px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+@media screen and (max-width:1080px){
+    .salats__title{
+        max-width: 190px;
+    }
+}
+
+@media screen and (max-width:375px){
+    .salats__title{
+        max-width: 170px;
+        font-size: 14px;
+    }
+}
+

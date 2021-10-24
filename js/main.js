@@ -12,4 +12,5 @@ elHeaderMenu.addEventListener("click",function(){
     elLineThree.classList.toggle("rotate-line3");
     elNav.classList.toggle("open-nav");
     elHeaderTop.classList.toggle("open-header");
-})
+});
+
