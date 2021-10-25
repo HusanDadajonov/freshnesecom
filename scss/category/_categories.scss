@@ -1,0 +1,21 @@
+.categories {
+    padding: 64px 0;
+
+    &__list {
+        @include list-unstyled;
+        
+    }
+
+    &__item{
+        margin-bottom: 48px;
+    }
+
+    &__title {
+        margin: 0 0 16px 0;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: $color-primary;
+    }
+
+}

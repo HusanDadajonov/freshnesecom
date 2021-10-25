@@ -1,0 +1,155 @@
+.fruits {
+    padding: 16px 0;
+
+    &__desc {
+        font-family: $font-open-sans;
+        margin: 0 0 16px 0;
+        font-size: 12px;
+        line-height: 16px;
+        color: $color-primary;
+    }
+
+    &__desc span{
+        color: #a9a9a9;
+    }
+
+    &__row {
+        padding: 8px 0;
+        margin-bottom: 25px;
+    }
+
+    &__title {
+        margin: 0;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 48px;
+        color: $color-primary;
+    }
+
+    &__list {
+        @include list-unstyled()
+    }
+
+    &__item:not(:last-child){
+        margin-right: 24px;
+        position: relative;
+
+        &::before{
+            content: "";
+            position:absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0,-50%);
+            width: 16px;
+            height: 16px;
+            background-size: 16px 16px;
+            background-repeat: no-repeat;
+        }
+
+        &:nth-child(1)::before{
+            background-image: url("../../img/grid-icon.svg");
+        }
+
+        &:nth-child(2)::before{
+            background-image: url("../../img/list-icon.svg");
+        }
+    }
+
+    &__btn {
+        font-family: $font-open-sans;
+        background: none;
+        border: none;
+        font-size: 12px;
+        line-height: 16px;
+        color: $color-primary;
+        padding-left: 20px;
+    }
+
+    &__prodcts {
+        display: inline-block;
+        font-family: $font-open-sans;
+        font-size: 12px;
+        line-height: 16px;
+        color: #a9a9a9;
+    }
+
+    &__count {
+        line-height: 18px;
+        color: $texts-color;
+        background: #f4f8ec;
+        padding: 0 8px;
+        margin-right: 5px;
+        border-radius: 12px;
+        font-family: $font-stack;
+    }
+
+    &__applied-filtr{
+        margin: 0;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: #a9a9a9;
+    }
+
+    &__applied-filtr .applid-filter{
+        color: $texts-color;
+        padding: 0 23px 0 8px;
+        margin-left: 12px;
+        position: relative;
+        background: #f4f8ec;
+        border-radius: 12px;
+        cursor: pointer;
+
+        &::before{
+            content: "";
+            position:absolute;
+            top: 50%;
+            transform: translate(0,-50%);
+            right: 8px;
+            width: 12px;
+            height: 12px;
+            background-image: url("../../img/apllied-x.svg");
+            background-size: 12px 12px;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+
+@media screen and (max-width:576px){
+    .fruits__filtres{
+        flex-direction: column;
+    }
+    .fruits__title{
+        font-size: 27px;
+        line-height: 30px;
+    }
+    .fruits__item:not(:last-child){
+        margin-right: 10px;
+    }
+    .fruits__applied-filtr{
+        flex-direction: column;
+    }
+    .applid-filter{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:350px){
+    .fruits__title{
+        font-size: 24px;
+        line-height: 24px;
+    }
+}
+
+
+
+@media screen and (max-width:768px){
+    .fruits__row{
+        flex-direction: column;
+    }
+    .fruits__title{
+        margin-bottom: 20px;
+    }
+}
+

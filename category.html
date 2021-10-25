@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson</title>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/flexboxgrid.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+  <section class="hero">
+    <div class="hero__header-top header-top">
+      <div class="header-top__container container">
+        <div class="header-top__row row between-xs middle-xs">
+          <ul class="header-top__list">
+            <li class="header-top__item">
+              <a class="header-top__link" href="#">Chat with us</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header-top__link header-top__link--tel" href="tel:+420336775664">+420 336 775 664</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header-top__link header-top__link--email" href="mailto:info@freshnesecom.com">info@freshnesecom.com</a>
+            </li>
+          </ul>
+          <ul class="header-top__list">
+            <li class="header-top__item">
+              <a class="header-top__link" href="#">Blog</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header-top__link" href="#">About Us</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header-top__link" href="#">Careers</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header class="hero__header header">
+      <div class="header__container container">
+        <div class="header__row row between-xs middle-xs">
+          <a class="header__logo-link" href="index.html">
+            <img class="header__logo" src="img/logo.svg" alt="logo-img" width="177" height="18">
+          </a>
+          <form class="header__form form" action="https://echo.htmlacademy.ru/" method="post">
+            <select class="form__select" name="categories" value="All categories">
+              <option class="form__option" selected disabled hidden>All categories</option>
+              <option class="form__option">Bakery</option>
+              <option class="form__option">Fruit and vegetables</option>
+              <option class="form__option">Meat and fish</option>
+              <option class="form__option">Drinks</option>
+              <option class="form__option">Kitchen</option>
+            </select>
+            <label class="form__label" for="search">
+              <input class="form__input" type="search" name="searched-food" id="search" placeholder="Search Products, categories ...">
+            </label>
+            <button class="form__btn">
+              <img src="img/search.svg" alt="search-icon" width="15" height="15">
+            </button>
+          </form>
+          <div class="row middle-xs">
+            <button class="header__btn">
+              <img src="img/user.svg" alt="user-icon">
+            </button>
+            <button class="header__btn">
+              <img src="img/bag.svg" alt="bag-icon">
+              <span class="header__count">4</span>
+            </button>
+            <button class="header__menu">
+              <div class="line-box">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="hero__nav nav">
+      <div class="nav__container container">
+        <ul class="nav__list row between-xs middle-xs">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Bakery</a>
+            <ul class="nav__drop-down drop-down">
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Fruit and vegetables</a>
+            <ul class="nav__drop-down drop-down">
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Meat and fish</a>
+            <ul class="nav__drop-down drop-down">
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Drinks</a>
+            <ul class="nav__drop-down drop-down">
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Kitchen</a>
+            <ul class="nav__drop-down drop-down">
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Special nutrition</a>
+            <ul class="nav__drop-down drop-down">
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Baby</a>
+            <ul class="nav__drop-down drop-down">
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Pharmacy</a>
+            <ul class="nav__drop-down drop-down">
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="fruits">
+        <div class="fruits__container container">
+            <p class="fruits__desc"><span>Homepage /</span> Fruit and vegetables</p>
+            <div class="fruits__row row between-xs middle-xs">
+                <h2 class="fruits__title">Fruit and vegetables</h2>
+                <ul class="fruits__list row middle-xs">
+                    <li class="fruits__item">
+                        <button class="fruits__btn fruits__btn--grid">Grid view</button>
+                    </li>
+                    <li class="fruits__item">
+                        <button class="fruits__btn fruits__btn--list">List view</button>
+                    </li>
+                    <li class="fruits__item">
+                        <span class="fruits__prodcts"><span class="fruits__count">117</span>Products</span>
+                    </li>
+                </ul>
+            </div>
+            <ul class="fruits__filtres filtres row middle-xs">
+                <li class="row middle-xs filtres__item">
+                    <div class="filtres__block">
+                        <input class="filtres__inp filtres__inp--radio" type="radio" name="filtre-text" id="filtre">
+                        <label class="filtres__label filtres__label--radio" for="filtre">Filtre text</label>
+                    </div>
+                    <div class="filtres__block">
+                        <input class="filtres__inp filtres__inp--radio" type="radio" name="filtre-text" id="filtre-active" checked>
+                        <label class="filtres__label filtres__label--radio" for="filtre-active">Filtre text</label>
+                    </div>
+                </li>
+                <li class="row middle-xs filtres__item">
+                    <input class="filtres__inp filtres__inp--check" type="checkbox" name="check-box" id="check-box1">
+                    <label class="filtres__label filtres__inp--label" for="check-box1">Filtre</label>
+                    <span class="filtres__span">Nbm</span>
+                </li>
+                <li class="row middle-xs filtres__item">
+                    <input class="filtres__inp filtres__inp--check" type="checkbox" name="check-box" id="check-box2">
+                    <label class="filtres__label filtres__inp--label" for="check-box2">Filtre</label>
+                    <span class="filtres__span">Nbm</span>
+                </li>
+                <li class="row middle-xs filtres__item">
+                    <input class="filtres__inp filtres__inp--check" type="checkbox" name="check-box" id="check-box3" checked>
+                    <label class="filtres__label filtres__inp--label" for="check-box3">Filtre</label>
+                    <span class="filtres__span">12</span>
+                    <span class="filtres__line"></span>
+                    <select class="filtres__select">
+                        <option class="filtres__option"  hidden >Select</option>
+                        <option class="filtres__option" >category</option>
+                        <option class="filtres__option" >category</option>
+                        <option class="filtres__option" >category</option>
+                    </select>
+                </li>
+            </ul>
+            <p class="fruits__applied-filtr row middle-xs">Applied filtres:<span class="applid-filter">Selected Filtre</span><span class="applid-filter">Selected Filtre</span></p>
+        </div>
+    </div>
+  </section>
+  <main>
+      <section class="categories">
+        <div class="categories__container container">
+            <div class="categories__row row between-xs">
+                <ul class="categories__list col-md-3 col-sm-12 col-xs-12">
+                    <li class="categories__item">
+                        <h2 class="categories__title">Categories</h2>
+                        <ul class="categories__name name">
+                            <li class="name__item row middle-xs between-xs">
+                                <a class="name__link" href="#">Category name</a>
+                                <span class="name__count">320</span>
+                            </li>
+                            <li class="name__item row middle-xs between-xs">
+                                <a class="name__link" href="#">Category name</a>
+                                <span class="name__count">320</span>
+                            </li>
+                            <li class="name__item row middle-xs between-xs">
+                                <a class="name__link" href="#">Category name</a>
+                                <span class="name__count">320</span>
+                            </li>
+                            <li class="name__item row middle-xs between-xs">
+                                <a class="name__link" href="#">Category name</a>
+                                <span class="name__count">320</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="categories__item">
+                        <h2 class="categories__title">Brands</h2>
+                        <ul class="categories__brands brands">
+                            <li class="brands__item">
+                                <input class="filtres__inp filtres__inp--check" type="checkbox" name="brands-check1" id="brands-check1">
+                                <label class="filtres__label filtres__inp--label" for="brands-check1">Filtre by brand item</label>
+                            </li>
+                            <li class="brands__item">
+                                <input class="filtres__inp filtres__inp--check" type="checkbox" name="check-box" id="brands-check2" checked>
+                                <label class="filtres__label filtres__inp--label" for="brands-check2">Filtre by brand item</label>
+                            </li>
+                            <li class="brands__item">
+                                <input class="filtres__inp filtres__inp--check" type="checkbox" name="check-box" id="brands-check3" checked>
+                                <label class="filtres__label filtres__inp--label" for="brands-check3">Filtre by brand item</label>
+                            </li>
+                            <li class="brands__item">
+                                <input class="filtres__inp filtres__inp--check" type="checkbox" name="check-box" id="brands-check4">
+                                <label class="filtres__label filtres__inp--label" for="brands-check4">Filtre by brand item</label>
+                            </li>
+                            <li class="brands__item">
+                                <input class="filtres__inp filtres__inp--check" type="checkbox" name="check-box" id="brands-check5">
+                                <label class="filtres__label filtres__inp--label" for="brands-check5">Filtre by brand item</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="categories__item">
+                        <h2 class="categories__title">Rating</h2>
+                        <ul class="categories__rating rating">
+                            <li class="rating__item">
+                                <input class="filtres__inp filtres__inp--check" type="checkbox" name="brands-check1" id="rating-check1">
+                                <label class="filtres__label filtres__inp--label" for="rating-check1">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </label>
+                            </li>
+                            <li class="rating__item">
+                                <input class="filtres__inp filtres__inp--check" type="checkbox" name="check-box" id="rating-check2">
+                                <label class="filtres__label filtres__inp--label" for="rating-check2">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bx-star'></i>
+                                </label>
+                            </li>
+                            <li class="rating__item">
+                                <input class="filtres__inp filtres__inp--check" type="checkbox" name="check-box" id="rating-check3">
+                                <label class="filtres__label filtres__inp--label" for="rating-check3">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bx-star'></i>
+                                    <i class='bx bx-star'></i>
+                                </label>
+                            </li>
+                            <li class="rating__item">
+                                <input class="filtres__inp filtres__inp--check" type="checkbox" name="check-box" id="rating-check4">
+                                <label class="filtres__label filtres__inp--label" for="rating-check4">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bx-star'></i>
+                                    <i class='bx bx-star'></i>
+                                    <i class='bx bx-star'></i>
+                                </label>
+                            </li>
+                            <li class="rating__item">
+                                <input class="filtres__inp filtres__inp--check" type="checkbox" name="check-box" id="rating-check5">
+                                <label class="filtres__label filtres__inp--label" for="rating-check5">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bx-star'></i>
+                                    <i class='bx bx-star'></i>
+                                    <i class='bx bx-star'></i>
+                                    <i class='bx bx-star'></i>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="categories__item">
+                        <h2 class="categories__title">Price</h2>
+                        <div class="categories__cost cost">
+                            <span class="cost__line"> <span class="cost__line--small"></span></span>
+                            <form class="cost__form" action="https://echo.htmlacademy.ru/" method="post">
+                                <div class="row between-xs">
+                                    <div class="cost__inp-box">
+                                        <label class="cost__label" for="min-num">Min</label>
+                                        <input class="cost__inp" type="number" name="min-num" id="min-num" value="0">
+                                    </div>
+                                    <div class="cost__inp-box">
+                                        <label class="cost__label" for="min-num">Max</label>
+                                        <input class="cost__inp" type="number" name="min-num" id="min-num" value="000">
+                                    </div>
+                                </div>
+                                <div class="cost__btn-box row middle-xs">
+                                    <button class="cost__btn btn">Apply</button>
+                                    <button class="cost__btn btn">Reset</button>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="categories__list col-md-9 col-sm-12  col-xs-12 categories__shopping shopping">
+                    <li class="shopping__item row between-xs">
+                        <div class="shopping__col col-md-4 shopping__img-box">
+                            <img class="shopping__img" src="img/dinner-bg.jpg" alt="food">
+                        </div>
+                        <div class="shopping__col col-md-4">
+                            <h2 class="shopping__title">Product title</h2>
+                            <p class="shopping__desc">Space for a small product description</p>
+                            <div>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bx-star"></i>
+                            </div>
+                            <ul class="shopping__list">
+                                <li class="shopping__about row middle-xs between-xs">
+                                    <p class="shopping__about--desc">Fresheness</p> <p class="shopping__about--desc"><span class="shopping__span">New</span> (Extra fresh)</p>
+                                </li>
+                                <li class="shopping__about row middle-xs between-xs">
+                                    <p class="shopping__about--desc">Farm</p> <p class="shopping__about--desc">Grocery Tarm Fields</p>
+                                </li>
+                                <li class="shopping__about row middle-xs between-xs">
+                                    <p class="shopping__about--desc">Delivery</p> <p class="shopping__about--desc">Europe</p>
+                                </li>
+                                <li class="shopping__about row middle-xs between-xs">
+                                    <p class="shopping__about--desc">Stock</p> <p class="shopping__about--count">320 pcs</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="shopping__col col-md-4">
+                            <h3 class="shopping__usd">36.99 USD</h3>
+                            <span class="shopping__discount">48.56</span>
+                            <div>
+                                <p class="shopping__free">Free Shipping</p>
+                                <span class="shopping__delivery">Delivery in 1 day</span>
+                            </div>
+                            <div class="shopping__btn--box">
+                              <button class="shopping__btn btn shopping__btn--product">Product Detail</button>
+                              <button class="shopping__btn btn shopping__btn--wish">Add to wish list</button>
+                          </div>
+                        </div>
+                    </li>
+                    <li class="shopping__item row between-xs">
+                        <div class="shopping__col col-md-4 shopping__img-box">
+                            <img class="shopping__img" src="img/dinner-bg.jpg" alt="food">
+                        </div>
+                        <div class="shopping__col col-md-4">
+                            <h2 class="shopping__title">Product title</h2>
+                            <p class="shopping__desc">Space for a small product description</p>
+                            <div>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bx-star"></i>
+                            </div>
+                            <ul class="shopping__list">
+                                <li class="shopping__about row middle-xs between-xs">
+                                    <p class="shopping__about--desc">Fresheness</p> <p class="shopping__about--desc"><span class="shopping__span">New</span> (Extra fresh)</p>
+                                </li>
+                                <li class="shopping__about row middle-xs between-xs">
+                                    <p class="shopping__about--desc">Farm</p> <p class="shopping__about--desc">Grocery Tarm Fields</p>
+                                </li>
+                                <li class="shopping__about row middle-xs between-xs">
+                                    <p class="shopping__about--desc">Delivery</p> <p class="shopping__about--desc">Europe</p>
+                                </li>
+                                <li class="shopping__about row middle-xs between-xs">
+                                    <p class="shopping__about--desc">Stock</p> <p class="shopping__about--count">320 pcs</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="shopping__col col-md-4">
+                            <h3 class="shopping__usd">36.99 USD</h3>
+                            <span class="shopping__discount">48.56</span>
+                            <div>
+                                <p class="shopping__free">Free Shipping</p>
+                                <span class="shopping__delivery">Delivery in 1 day</span>
+                            </div>
+                            <div class="shopping__btn--box">
+                              <button class="shopping__btn btn shopping__btn--product">Product Detail</button>
+                              <button class="shopping__btn btn shopping__btn--wish">Add to wish list</button>
+                          </div>
+                        </div>
+                    </li>
+                    <li class="shopping__item row between-xs">
+                        <div class="shopping__col col-md-4 shopping__img-box">
+                            <img class="shopping__img" src="img/dinner-bg.jpg" alt="food">
+                        </div>
+                        <div class="shopping__col col-md-4">
+                            <h2 class="shopping__title">Product title</h2>
+                            <p class="shopping__desc">Space for a small product description</p>
+                            <div>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bx-star"></i>
+                            </div>
+                            <ul class="shopping__list">
+                                <li class="shopping__about row middle-xs between-xs">
+                                    <p class="shopping__about--desc">Fresheness</p> <p class="shopping__about--desc"><span class="shopping__span">New</span> (Extra fresh)</p>
+                                </li>
+                                <li class="shopping__about row middle-xs between-xs">
+                                    <p class="shopping__about--desc">Farm</p> <p class="shopping__about--desc">Grocery Tarm Fields</p>
+                                </li>
+                                <li class="shopping__about row middle-xs between-xs">
+                                    <p class="shopping__about--desc">Delivery</p> <p class="shopping__about--desc">Europe</p>
+                                </li>
+                                <li class="shopping__about row middle-xs between-xs">
+                                    <p class="shopping__about--desc">Stock</p> <p class="shopping__about--count">320 pcs</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="shopping__col col-md-4">
+                            <h3 class="shopping__usd">36.99 USD</h3>
+                            <span class="shopping__discount">48.56</span>
+                            <div>
+                                <p class="shopping__free">Free Shipping</p>
+                                <span class="shopping__delivery">Delivery in 1 day</span>
+                            </div>
+                            <div class="shopping__btn--box">
+                              <button class="shopping__btn btn shopping__btn--product">Product Detail</button>
+                              <button class="shopping__btn btn shopping__btn--wish">Add to wish list</button>
+                          </div>
+                        </div>
+                    </li>
+                    <li class="shopping__item row between-xs">
+                        <div class="shopping__col col-md-4 shopping__img-box">
+                            <img class="shopping__img" src="img/dinner-bg.jpg" alt="food">
+                        </div>
+                        <div class="shopping__col col-md-4">
+                            <h2 class="shopping__title">Product title</h2>
+                            <p class="shopping__desc">Space for a small product description</p>
+                            <div>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bx-star"></i>
+                            </div>
+                            <ul class="shopping__list">
+                                <li class="shopping__about row middle-xs between-xs">
+                                    <p class="shopping__about--desc">Fresheness</p> <p class="shopping__about--desc"><span class="shopping__span">New</span> (Extra fresh)</p>
+                                </li>
+                                <li class="shopping__about row middle-xs between-xs">
+                                    <p class="shopping__about--desc">Farm</p> <p class="shopping__about--desc">Grocery Tarm Fields</p>
+                                </li>
+                                <li class="shopping__about row middle-xs between-xs">
+                                    <p class="shopping__about--desc">Delivery</p> <p class="shopping__about--desc">Europe</p>
+                                </li>
+                                <li class="shopping__about row middle-xs between-xs">
+                                    <p class="shopping__about--desc">Stock</p> <p class="shopping__about--count">320 pcs</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="shopping__col col-md-4">
+                            <h3 class="shopping__usd">36.99 USD</h3>
+                            <span class="shopping__discount">48.56</span>
+                            <div>
+                                <p class="shopping__free">Free Shipping</p>
+                                <span class="shopping__delivery">Delivery in 1 day</span>
+                            </div>
+                            <div class="shopping__btn--box">
+                              <button class="shopping__btn btn shopping__btn--product">Product Detail</button>
+                              <button class="shopping__btn btn shopping__btn--wish">Add to wish list</button>
+                          </div>
+                        </div>
+                    </li>
+                    <li class="shopping__item row between-xs">
+                        <div class="shopping__col col-md-4 shopping__img-box">
+                            <img class="shopping__img" src="img/dinner-bg.jpg" alt="food">
+                        </div>
+                        <div class="shopping__col col-md-4">
+                            <h2 class="shopping__title">Product title</h2>
+                            <p class="shopping__desc">Space for a small product description</p>
+                            <div>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bx-star"></i>
+                            </div>
+                            <ul class="shopping__list">
+                                <li class="shopping__about row middle-xs between-xs">
+                                    <p class="shopping__about--desc">Fresheness</p> <p class="shopping__about--desc"><span class="shopping__span">New</span> (Extra fresh)</p>
+                                </li>
+                                <li class="shopping__about row middle-xs between-xs">
+                                    <p class="shopping__about--desc">Farm</p> <p class="shopping__about--desc">Grocery Tarm Fields</p>
+                                </li>
+                                <li class="shopping__about row middle-xs between-xs">
+                                    <p class="shopping__about--desc">Delivery</p> <p class="shopping__about--desc">Europe</p>
+                                </li>
+                                <li class="shopping__about row middle-xs between-xs">
+                                    <p class="shopping__about--desc">Stock</p> <p class="shopping__about--count">320 pcs</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="shopping__col col-md-4">
+                            <h3 class="shopping__usd">36.99 USD</h3>
+                            <span class="shopping__discount">48.56</span>
+                            <div>
+                                <p class="shopping__free">Free Shipping</p>
+                                <span class="shopping__delivery">Delivery in 1 day</span>
+                            </div>
+                            <div class="shopping__btn--box">
+                                <button class="shopping__btn btn shopping__btn--product">Product Detail</button>
+                                <button class="shopping__btn btn shopping__btn--wish">Add to wish list</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <ul class="footer__list row between-xs">
+        <li class="footer__item footer-about col-md-3 col-sm-6 col-xs-12">
+          <h2 class="footer-about__title">Get in touch</h2>
+          <ul class="footer-about__list">
+            <li class="footer-about__item"><a class="footer-about__link" href="#">About Us</a></li>
+            <li class="footer-about__item"><a class="footer-about__link" href="#">Careers</a></li>
+            <li class="footer-about__item"><a class="footer-about__link" href="#">Press Releases</a></li>
+            <li class="footer-about__item"><a class="footer-about__link" href="#">Blog</a></li>
+          </ul>
+        </li>
+        <li class="footer__item footer-about col-md-3 col-sm-6 col-xs-12">
+          <h2 class="footer-about__title">Connections</h2>
+          <ul class="footer-about__list">
+            <li class="footer-about__item"><a class="footer-about__link" href="#" target="_blank">Facebook</a></li>
+            <li class="footer-about__item"><a class="footer-about__link" href="#" target="_blank">Facebook</a></li>
+            <li class="footer-about__item"><a class="footer-about__link" href="#" target="_blank">Instagram</a></li>
+            <li class="footer-about__item"><a class="footer-about__link" href="#" target="_blank">Youtube</a></li>
+            <li class="footer-about__item"><a class="footer-about__link" href="#" target="_blank">LinkedIn</a></li>
+          </ul>
+        </li>
+        <li class="footer__item footer-about col-md-3 col-sm-6 col-xs-12">
+          <h2 class="footer-about__title">Earnings</h2>
+          <ul class="footer-about__list">
+            <li class="footer-about__item"><a class="footer-about__link" href="#">Become an Affiliate</a></li>
+            <li class="footer-about__item"><a class="footer-about__link" href="#">Advertise your product</a></li>
+            <li class="footer-about__item"><a class="footer-about__link" href="#">Sell on Market</a></li>
+          </ul>
+        </li>
+        <li class="footer__item footer-about col-md-3 col-sm-6 col-xs-12">
+          <h2 class="footer-about__title">Account</h2>
+          <ul class="footer-about__list">
+            <li class="footer-about__item"><a class="footer-about__link" href="#">Your account</a></li>
+            <li class="footer-about__item"><a class="footer-about__link" href="#">Returns Centre</a></li>
+            <li class="footer-about__item"><a class="footer-about__link" href="#">100 % purchase protection</a></li>
+            <li class="footer-about__item"><a class="footer-about__link" href="#" target="_blank">Chat with us</a></li>
+            <li class="footer-about__item"><a class="footer-about__link" href="#">Help</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="row middle-xs footer__product-tags product-tags">
+          <li class="product-tags__item">
+            <a class="product-tags__link" href="#" target="_blank">Beans</a>
+          </li>
+          <li class="product-tags__item">
+            <a class="product-tags__link" href="#" target="_blank">Carrots</a>
+          </li>
+          <li class="product-tags__item">
+            <a class="product-tags__link" href="#" target="_blank">Apples</a>
+          </li>
+          <li class="product-tags__item">
+            <a class="product-tags__link" href="#" target="_blank">Garlic</a>
+          </li>
+          <li class="product-tags__item">
+            <a class="product-tags__link" href="#" target="_blank">Mushrooms</a>
+          </li>
+          <li class="product-tags__item">
+            <a class="product-tags__link" href="#" target="_blank">Tomatoes</a>
+          </li>
+          <li class="product-tags__item">
+            <a class="product-tags__link" href="#" target="_blank">Chilli peppers</a>
+          </li>
+          <li class="product-tags__item">
+            <a class="product-tags__link" href="#" target="_blank">Broccoli</a>
+          </li>
+          <li class="product-tags__item">
+            <a class="product-tags__link" href="#" target="_blank">Watermelons</a>
+          </li>
+          <li class="product-tags__item">
+            <a class="product-tags__link" href="#" target="_blank">Oranges</a>
+          </li>
+          <li class="product-tags__item">
+            <a class="product-tags__link" href="#" target="_blank">Bananas</a>
+          </li>
+          <li class="product-tags__item">
+            <a class="product-tags__link" href="#" target="_blank">Grapes</a>
+          </li>
+          <li class="product-tags__item">
+            <a class="product-tags__link" href="#" target="_blank">Cherries</a>
+          </li>
+          <li class="product-tags__item">
+            <a class="product-tags__link" href="#" target="_blank">Meat</a>
+          </li>
+          <li class="product-tags__item">
+            <a class="product-tags__link" href="#" target="_blank">Seo tag</a>
+          </li>
+          <li class="product-tags__item">
+            <a class="product-tags__link" href="#" target="_blank">Fish</a>
+          </li>
+          <li class="product-tags__item">
+            <a class="product-tags__link" href="#" target="_blank">Seo tag</a>
+          </li>
+          <li class="product-tags__item">
+            <a class="product-tags__link" href="#" target="_blank">Fresh food</a>
+          </li>
+          <li class="product-tags__item">
+            <a class="product-tags__link" href="#" target="_blank">Lemons</a>
+          </li>
+      </ul>
+      <p class="footer__desc">Copyright © 2020 petrbilek.com</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
