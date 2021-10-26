@@ -33,6 +33,17 @@
     &__item:not(:last-child){
         margin-right: 24px;
         position: relative;
+    }
+
+    &__btn {
+        font-family: $font-open-sans;
+        background: none;
+        border: none;
+        font-size: 12px;
+        line-height: 16px;
+        color: $color-primary;
+        padding-left: 20px;
+        cursor: pointer;
 
         &::before{
             content: "";
@@ -44,25 +55,12 @@
             height: 16px;
             background-size: 16px 16px;
             background-repeat: no-repeat;
-        }
-
-        &:nth-child(1)::before{
             background-image: url("../../img/grid-icon.svg");
-        }
-
-        &:nth-child(2)::before{
-            background-image: url("../../img/list-icon.svg");
         }
     }
 
-    &__btn {
-        font-family: $font-open-sans;
-        background: none;
-        border: none;
-        font-size: 12px;
-        line-height: 16px;
-        color: $color-primary;
-        padding-left: 20px;
+    .fruits__btn--list::before{
+        background-image: url("../../img/list-icon.svg");
     }
 
     &__prodcts {

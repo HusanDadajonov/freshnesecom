@@ -1,5 +1,8 @@
 .shopping {
-    padding-left: 30px;
+
+    &__stars{
+        margin-bottom: 16px;
+    }
 
     &__col{
         padding-left: 0;
@@ -13,7 +16,6 @@
 
     &__col .bx{
         font-size: 15px;
-        margin-bottom: 25px;
     }
 
     &__item {
