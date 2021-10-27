@@ -1,0 +1,312 @@
+.detail {
+    padding-top: 16px;
+
+    &__sale-box{
+        position:absolute;
+        z-index:2;
+        left: 16px;
+        top: 16px;
+    }
+
+    &__sale{
+        display: inline-block;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: $texts-color;
+        background: #f4f8ec;
+        border-radius: 12px;
+        padding: 4px 10px;
+
+        &:not(:last-child){
+            margin-right: 12px;
+        }
+    }
+
+    &__col {
+        padding-left: 0;
+        padding-right: 0;
+
+        &:nth-child(2){
+            padding-left: 32px;
+        }
+    }
+
+    &__img-box {
+        position: relative;
+        max-width: 570px;
+        height: 436px;
+        overflow: hidden;
+        background: #f9f9f9;
+        border-radius: 12px;
+        margin-bottom: 32px;
+
+        &::before{
+            content: "";
+            position:absolute;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: 0.3;
+            z-index: 1;
+        }
+    }
+
+    &__img {
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__title {
+        margin: 0 0 8px 0;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 140%;
+        color: $color-primary;
+    }
+
+    &__stars{
+        margin-bottom: 40px;
+    }
+
+    &__stars .bxs-star{
+        color: #fdbc15;
+        font-size: 16px;
+        margin-right: 5px;
+    }
+
+    &__stars .bx-star{
+        color: #d1d1d1;
+        font-size: 16px;
+    }
+
+    &__review {
+        font-family: $font-open-sans;
+        display: inline-block;
+        font-size: 12px;
+        line-height: 16px;
+        color: #a9a9a9;
+        margin-left: 8px;
+    }
+
+    &__desc {
+        font-family: $font-open-sans;
+        margin:  0 0 40px 0;
+        font-size: 17px;
+        line-height: 23px;
+        color: $color-primary
+    }
+
+    &__list {
+        @include list-unstyled();
+        width: 40%;
+
+        &:not(:last-child){
+            margin-right: 32px;
+        }
+    }
+
+    &__item:not(:last-child){
+        margin-bottom: 12px;
+
+        &:nth-child(2) .detail__link {
+            text-decoration-line: underline;
+        }
+        &:nth-child(3) .detail__link {
+            text-decoration-line: underline;
+            color: $texts-color;
+        }
+    }
+
+    &__about {
+        font-family: $font-open-sans;
+        font-size: 14px;
+        line-height: 19px;
+        color: #a9a9a9;
+    }
+
+    &__link {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 19px;
+        color:$color-primary;
+        text-decoration: none;
+    }
+
+    
+    &__form {
+        background: #fff;
+        border: 1px solid #f5f5f5;
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 24px;
+    }
+
+    &__usd {
+        margin: 0;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 39px;
+        color: $texts-color;
+    }
+
+    &__list-row{
+        margin-bottom: 50px;
+    }
+
+    &__discount {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        text-decoration-line: line-through;
+        color: #a9a9a9;        
+    }
+
+    &__select-box {
+        background: #f9f9f9;
+        border: 1px solid #d1d1d1;
+        border-radius: 12px;
+        padding: 15px;
+    }
+
+    &__count {
+        font-family: $font-open-sans;
+        display: inline-block;
+        font-size: 14px;
+        color:#d1d1d1;
+        line-height: 19px;    
+        border-right: 1px solid #d1d1d1;  
+        padding-right: 16px;  
+    }
+
+    &__select {
+        background: none;
+        border: none;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color:$color-primary;
+    }
+
+    &__btn {
+        color: #fff;
+        background: #6a983c;
+        border: 2px solid #46760a;
+        border-radius: 12px;
+        line-height: 22px;
+        position: relative;
+    }
+
+    &__wish-bnt,
+    &__compare--btn{
+        position: relative;
+        padding-left: 22px;
+    }
+
+    &__wish-bnt::before,
+    &__compare--btn::before{
+        content: "";
+        position:absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0,-50%);
+        width: 16px;
+        height: 16px;
+        background-image: url("../../img/wish-heart-red.svg");
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+    }
+
+    &__compare--btn{
+        margin-left: 16px;
+    }
+
+    &__compare--btn::before{
+        background-image: url("../../img/compare.svg");
+    }
+
+    &__buttons-box{
+        margin-bottom: 60px;
+    }
+}
+
+
+@media screen and (max-width:1100px){
+    .detail__link{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:992px){
+    .detail__link{
+        font-size: 14px;
+    }
+    .detail__img-box{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .detail__list-row{
+        flex-direction: column;
+    }
+    .detail__list{
+        margin-bottom: 32px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:576px){
+    .detail__title{
+        font-size: 25px;
+        line-height: 120%;
+    }
+    .fruits__desc{
+        line-height: 20px;
+    }
+    .detail__form{
+        flex-direction: column;
+    }
+
+    .detail__select-box{
+        margin: 16px 0;
+    }
+
+    .detail__btn,
+    .detail__select-box{
+        width: 100%;
+    }
+
+    .detail__usd{
+        width: 100%;
+    }
+    .origins__title{
+        font-size: 15px !important;
+    }
+}
+
+@media screen and (max-width:450px){
+    .origins__title{
+        font-size: 12px !important;
+    }
+    .origins__sale{
+        display: none;
+    }
+    .origins__item:nth-child(2){
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:408px){
+    .detail__compare--btn {
+        margin-left: 0;
+    }
+    .customers__title{
+        font-size: 15px;
+    }
+    .customers__btn{
+        font-size:13px;
+    }
+}

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson</title>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/flexboxgrid.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="hero__header-top header-top">
+          <div class="header-top__container container">
+            <div class="header-top__row row between-xs middle-xs">
+              <ul class="header-top__list">
+                <li class="header-top__item">
+                  <a class="header-top__link" href="#">Chat with us</a>
+                </li>
+                <li class="header-top__item">
+                  <a class="header-top__link header-top__link--tel" href="tel:+420336775664">+420 336 775 664</a>
+                </li>
+                <li class="header-top__item">
+                  <a class="header-top__link header-top__link--email" href="mailto:info@freshnesecom.com">info@freshnesecom.com</a>
+                </li>
+              </ul>
+              <ul class="header-top__list">
+                <li class="header-top__item">
+                  <a class="header-top__link" href="#">Blog</a>
+                </li>
+                <li class="header-top__item">
+                  <a class="header-top__link" href="#">About Us</a>
+                </li>
+                <li class="header-top__item">
+                  <a class="header-top__link" href="#">Careers</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <header class="hero__header header">
+          <div class="header__container container">
+            <div class="header__row row between-xs middle-xs">
+              <a class="header__logo-link" href="index.html">
+                <img class="header__logo" src="img/logo.svg" alt="logo-img" width="177" height="18">
+              </a>
+              <form class="header__form form" action="https://echo.htmlacademy.ru/" method="post">
+                <select class="form__select" name="categories" value="All categories">
+                  <option class="form__option" selected disabled hidden>All categories</option>
+                  <option class="form__option">Bakery</option>
+                  <option class="form__option">Fruit and vegetables</option>
+                  <option class="form__option">Meat and fish</option>
+                  <option class="form__option">Drinks</option>
+                  <option class="form__option">Kitchen</option>
+                </select>
+                <label class="form__label" for="search">
+                  <input class="form__input" type="search" name="searched-food" id="search" placeholder="Search Products, categories ...">
+                </label>
+                <button class="form__btn">
+                  <img src="img/search.svg" alt="search-icon" width="15" height="15">
+                </button>
+              </form>
+              <div class="row middle-xs">
+                <button class="header__btn">
+                  <img src="img/user.svg" alt="user-icon">
+                </button>
+                <button class="header__btn">
+                  <img src="img/bag.svg" alt="bag-icon">
+                  <span class="header__count">4</span>
+                </button>
+                <button class="header__menu">
+                  <div class="line-box">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </header>
+        <nav class="hero__nav nav">
+          <div class="nav__container container">
+            <ul class="nav__list row between-xs middle-xs">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Bakery</a>
+                <ul class="nav__drop-down drop-down">
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Fruit and vegetables</a>
+                <ul class="nav__drop-down drop-down">
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Meat and fish</a>
+                <ul class="nav__drop-down drop-down">
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Drinks</a>
+                <ul class="nav__drop-down drop-down">
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Kitchen</a>
+                <ul class="nav__drop-down drop-down">
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Special nutrition</a>
+                <ul class="nav__drop-down drop-down">
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Baby</a>
+                <ul class="nav__drop-down drop-down">
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Pharmacy</a>
+                <ul class="nav__drop-down drop-down">
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </section>
+    <main>
+        <section class="detail">
+            <div class="detail__container container">
+                <p class="fruits__desc"><span>Homepage / Fruit and vegetables /</span> Carrots from Tomissy Farm</p>
+                <div class="detail__row row between-xs">
+                    <div class="detail__col col-md-6 col-xs-12">
+                        <div class="detail__img-box">
+                            <div class="detail__sale-box">
+                                <span class="detail__sale">- 36 %</span> <span class="detail__sale">Free shipping</span>
+                            </div>
+                            <img class="detail__img" src="img/fast-food.png" alt="food-img">
+                        </div>
+                        <div class="detail__img-box">
+                            <img class="detail__img" src="img/fast-food.png" alt="food-img">
+                        </div>
+                        <div class="detail__img-box">
+                            <img class="detail__img" src="img/fast-food.png" alt="food-img">
+                        </div>
+                    </div>
+                    <div class="detail__col col-md-6 col-xs-12">
+                        <h2 class="detail__title">Carrots from Tomissy Farm</h2>
+                        <div class="detail__stars row middle-xs">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i> 
+                            <i class='bx bx-star'></i>
+                            <span class="detail__review">(1 customer review)</span>
+                        </div>
+                        <p class="detail__desc">Carrots from Tomissy Farm are one of the best on the market. Tomisso and his family are giving a full love to his Bio products. Tomisso’s carrots are growing on the fields naturally.</p>
+                        <div class="row detail__list-row">
+                            <ul class="detail__list">
+                                <li class="detail__item row middle-xs between-xs">
+                                    <span class="detail__about">SKU:</span>
+                                    <a class="detail__link" href="#">76645</a>
+                                </li>
+                                <li class="detail__item row middle-xs between-xs">
+                                    <span class="detail__about">Category:</span>
+                                    <a class="detail__link" href="#">Vegetables</a>
+                                </li>
+                                <li class="detail__item row middle-xs between-xs">
+                                    <span class="detail__about">Stock:</span>
+                                    <a class="detail__link" href="#">In Stock</a>
+                                </li>
+                                <li class="detail__item row middle-xs between-xs">
+                                    <span class="detail__about">Farm</span>
+                                    <a class="detail__link" href="#">Grocery Tarm Fields</a>
+                                </li>
+                            </ul>
+                            <ul class="detail__list">
+                                <li class="detail__item row middle-xs between-xs">
+                                    <span class="detail__about">SKU:</span>
+                                    <a class="detail__link" href="#">76645</a>
+                                </li>
+                                <li class="detail__item row middle-xs between-xs">
+                                    <span class="detail__about">Category:</span>
+                                    <a class="detail__link" href="#">Vegetables</a>
+                                </li>
+                                <li class="detail__item row middle-xs between-xs">
+                                    <span class="detail__about">Stock:</span>
+                                    <a class="detail__link" href="#">In Stock</a>
+                                </li>
+                                <li class="detail__item row middle-xs between-xs">
+                                    <span class="detail__about">Farm</span>
+                                    <a class="detail__link" href="#">Grocery Tarm Fields</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <form class="detail__form row between-xs middle-xs" action="https://echo.htmlacademy.ru/" method="post">
+                            <div>
+                                <h2 class="detail__usd">36.23 USD</h2>
+                                <span class="detail__discount">48.56 USD</span>
+                            </div>
+                            <div class="detail__select-box">
+                                <span class="detail__count">1</span>
+                                <select  class="detail__select">
+                                    <option value="Pcs" hidden>Pcs</option>
+                                    <option >food</option>
+                                    <option >food</option>
+                                </select>
+                            </div>
+                            <button class="detail__btn btn">
+                                + Add to cart
+                            </button>
+                        </form>
+                        <div class="detail__buttons-box">
+                            <button class="detail__wish-bnt btn">Add to my wish list</button>
+                            <button class="detail__compare--btn btn">Compare</button>
+                        </div>
+                        <div class="detail__origins origins">
+                            <ul class="origins__list">
+                                <li class="origins__item row middle-xs origins__item--active">
+                                    <h2 class="origins__title">Description</h2>
+                                </li>
+                                <li class="origins__item row middle-xs">
+                                    <h2 class="origins__title">Reviews</h2>
+                                    <span class="detail__sale origins__sale">18</span>
+                                </li>
+                                <li class="origins__item row middle-xs">
+                                    <h2 class="origins__title">Questions</h2>
+                                    <span class="detail__sale origins__sale">4</span>
+                                </li>
+                            </ul>
+                            <div class="detail__cook cook">
+                                <h3 class="cook__title">Origins</h3>
+                                <p class="cook__desc">We work hard to ensure that the fruit and vegetables we sell are fresh and high in quality. If we don’t grow them ourselves, we source them from carefully chosen suppliers, preferring to buy locally whenever possible.</p>
+                                <h3 class="cook__title">How to cook</h3>
+                                <p class="cook__desc">From roasts, salads and soups to casseroles and cakes, Carrots will lend sweetness, texture and colour to an enormous number of recipes.</p>
+                            </div>
+                            <div class="detail__table">
+                                <h2 class="vitamins">Full of Vitamins!</h2>
+                                <div class="table">
+                                    <ul class="table__list">
+                                        <li class="table__item">
+                                            <h4 class="table__title">Vitamins</h4>
+                                        </li>
+                                        <li class="table__item">
+                                            <p class="table__desc">Vitamin A equiv.</p>
+                                        </li>
+                                        <li class="table__item">
+                                            <p class="table__desc">Thiamine (B1)</p>
+                                        </li>
+                                        <li class="table__item">    
+                                            <p class="table__desc">Niacin (B3)</p>
+                                        </li>
+                                        <li class="table__item">
+                                            <p class="table__desc">Folate (Bg)</p>
+                                        </li>
+                                        <li class="table__item">    
+                                            <p class="table__desc">Vitamin C</p>
+                                        </li>
+                                        <li class="table__item">    
+                                            <p class="table__desc">Vitamin E</p>
+                                        </li>
+                                        <li class="table__item">
+                                            <p class="table__desc">Vitamin K</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="table__list">
+                                        <li class="table__item">
+                                            <h4 class="table__title">Quantity</h4>
+                                        </li>
+                                        <li class="table__item">
+                                            <p class="table__desc">735 μg</p>
+                                        </li>
+                                        <li class="table__item">
+                                            <p class="table__desc">0.066 mg</p>
+                                        </li>
+                                        <li class="table__item">    
+                                            <p class="table__desc">0.983 mg</p>
+                                        </li>
+                                        <li class="table__item">
+                                            <p class="table__desc">19 μg</p>
+                                        </li>
+                                        <li class="table__item">    
+                                            <p class="table__desc">5.9 mg</p>
+                                        </li>
+                                        <li class="table__item">    
+                                            <p class="table__desc">0.66 mg</p>
+                                        </li>
+                                        <li class="table__item">
+                                            <p class="table__desc">13.2</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="table__list">
+                                        <li class="table__item">
+                                            <h4 class="table__title">% DV</h4>
+                                        </li>
+                                        <li class="table__item">
+                                            <p class="table__desc">104 %</p>
+                                        </li>
+                                        <li class="table__item">
+                                            <p class="table__desc">6 %</p>
+                                        </li>
+                                        <li class="table__item">    
+                                            <p class="table__desc">7 %</p>
+                                        </li>
+                                        <li class="table__item">
+                                            <p class="table__desc">5 %</p>
+                                        </li>
+                                        <li class="table__item">    
+                                            <p class="table__desc">7 %</p>
+                                        </li>
+                                        <li class="table__item">    
+                                            <p class="table__desc">4 %</p>
+                                        </li>
+                                        <li class="table__item">
+                                            <p class="table__desc">13 %</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="related-products">
+            <div class="container">
+                <div class="row middle-xs between-xs">
+                    <h2 class="customers__title">Related products</h2>
+                    <button class="customers__btn btn">More products</button>
+                </div>
+                <div class="row between-xs">
+                    <div class="product__col col-md-3 col-sm-6 col-xs-12">
+                      <div class="product__price price">
+                          <div class="price__img-box">
+                            <img class="price__img" src="img/food.jpg" alt="food-img">
+                          </div>
+                          <h2 class="price__title">Product Title</h2>
+                          <p class="price__desc">Space for a small product description</p>
+                          <div class="price__row row middle-xs between-xs">
+                            <a class="price__btn btn" href="#">Buy now</a>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="product__col col-md-3 col-sm-6 col-xs-12">
+                      <div class="product__price price">
+                          <div class="price__img-box">
+                            <img class="price__img" src="img/food.jpg" alt="food-img">
+                          </div>
+                          <h2 class="price__title">Product Title</h2>
+                          <p class="price__desc">Space for a small product description</p>
+                          <div class="price__row row middle-xs between-xs">
+                            <span class="price__usd">1.48 USD</span>
+                            <a class="price__btn btn" href="#">Buy now</a>
+                          </div>  
+                      </div>
+                    </div>
+                    <div class="product__col col-md-3 col-sm-6 col-xs-12">
+                    <div class="product__price price">
+                        <div class="price__img-box">
+                          <span class="price__sale">- 36 %</span>
+                          <img class="price__img" src="img/food.jpg" alt="food-img">
+                        </div>
+                        <h2 class="price__title">Product Title</h2>
+                        <p class="price__desc">Space for a small product description</p>
+                        <div class="price__row row middle-xs between-xs">
+                          <span class="price__usd">1.48 USD</span>
+                          <span class="price__discover">48.56</span>
+                          <a class="price__btn btn" href="#">Buy now</a>
+                        </div>  
+                    </div>
+                    </div>
+                    <div class="product__col col-md-3 col-sm-6 col-xs-12">
+                    <div class="product__price price">
+                        <div class="price__img-box">
+                          <img class="price__img" src="img/food.jpg" alt="food-img">
+                        </div>
+                        <h2 class="price__title">Product Title</h2>
+                        <p class="price__desc">Space for a small product description</p>
+                        <div class="price__row row middle-xs between-xs">
+                          <span class="price__usd">1.48 USD</span>
+                          <a class="price__btn btn" href="#">Buy now</a>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container">
+          <ul class="footer__list row between-xs">
+            <li class="footer__item footer-about col-md-3 col-sm-6 col-xs-12">
+              <h2 class="footer-about__title">Get in touch</h2>
+              <ul class="footer-about__list">
+                <li class="footer-about__item"><a class="footer-about__link" href="#">About Us</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#">Careers</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#">Press Releases</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li class="footer__item footer-about col-md-3 col-sm-6 col-xs-12">
+              <h2 class="footer-about__title">Connections</h2>
+              <ul class="footer-about__list">
+                <li class="footer-about__item"><a class="footer-about__link" href="#" target="_blank">Facebook</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#" target="_blank">Facebook</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#" target="_blank">Instagram</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#" target="_blank">Youtube</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#" target="_blank">LinkedIn</a></li>
+              </ul>
+            </li>
+            <li class="footer__item footer-about col-md-3 col-sm-6 col-xs-12">
+              <h2 class="footer-about__title">Earnings</h2>
+              <ul class="footer-about__list">
+                <li class="footer-about__item"><a class="footer-about__link" href="#">Become an Affiliate</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#">Advertise your product</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#">Sell on Market</a></li>
+              </ul>
+            </li>
+            <li class="footer__item footer-about col-md-3 col-sm-6 col-xs-12">
+              <h2 class="footer-about__title">Account</h2>
+              <ul class="footer-about__list">
+                <li class="footer-about__item"><a class="footer-about__link" href="#">Your account</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#">Returns Centre</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#">100 % purchase protection</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#" target="_blank">Chat with us</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#">Help</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="row middle-xs footer__product-tags product-tags">
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Beans</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Carrots</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Apples</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Garlic</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Mushrooms</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Tomatoes</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Chilli peppers</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Broccoli</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Watermelons</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Oranges</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Bananas</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Grapes</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Cherries</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Meat</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Seo tag</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Fish</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Seo tag</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Fresh food</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Lemons</a>
+              </li>
+          </ul>
+          <p class="footer__desc">Copyright © 2020 petrbilek.com</p>
+        </div>
+    </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

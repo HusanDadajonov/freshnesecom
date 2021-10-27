@@ -1,0 +1,17 @@
+.cook {
+
+    &__title {
+        margin: 0 0 8px 0;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        color: $color-primary;
+    }
+
+    &__desc {
+        font-family: $font-open-sans;
+        margin: 0 0 32px 0;
+        font-size: 14px;
+        line-height: 19px;
+    }
+}

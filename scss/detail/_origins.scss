@@ -1,0 +1,51 @@
+.origins {
+
+    &__list {
+        width: 100%;
+        @include list-unstyled;
+        display: flex;
+        border-bottom: 1px solid #f5f5f5;
+        padding-bottom: 16px;
+        margin-bottom: 48px;
+    }
+
+    &__item--active::before{
+        width: 90% !important;
+    }
+
+    &__item {
+        cursor: pointer;
+        width: 33.3%;
+        position: relative;
+
+        &::before{
+            content: "";
+            position:absolute;
+            bottom: -16px;
+            width: 0;
+            height: 1px;
+            background: $texts-color;
+            transition:  width 0.4s ease;
+        }
+
+        &:hover::before{
+            width: 90%;
+        }
+
+        &:nth-child(2) .origins__title{
+            margin-right: 10px;
+        }
+
+        &:nth-child(3) .origins__title{
+            margin-right: 10px;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: $color-primary;
+    }
+}
