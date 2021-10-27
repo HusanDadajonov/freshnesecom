@@ -6,7 +6,10 @@
     }
 
     &__item {
-        margin-bottom: 15px;
+        padding: 10px 0;
+        &:nth-child(even){
+            background: #fdfdfd;
+        }
     }
 
     &__title {

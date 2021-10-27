@@ -1,0 +1,116 @@
+.leave {
+    padding: 48px 0;
+
+    &__title {
+        margin: 0 0 12px 0;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+        color: $color-primary
+    }
+
+    &__desc {
+        font-family: $font-open-sans;
+        margin: 0 0 16px 0; 
+        font-size: 17px;
+        line-height: 23px;
+        color: $color-primary;
+    }
+
+    &__sing-in {
+        color: $color-primary;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__main-row {
+        padding-left: 371px;
+    }
+
+    &__inputs-box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+
+        &:not(:last-child){
+            margin-right: 32px;
+        }
+    }
+
+    &__inputs-user{
+        width: 34%;
+    }
+
+    &__inputs--save-comment{
+        max-width: 500px;
+        margin-right: 0 !important;
+        background: #f9f9f9;
+        border: 1px solid #d1d1d1;
+        border-radius: 12px;
+        padding: 10px 16px;
+    }
+
+    &__label {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: $color-primary;
+    }
+
+    &__input{
+        background: #f9f9f9;
+        border: 1px solid #d1d1d1;
+        border-radius: 12px;
+        padding: 12px 16px 12px 21px;
+
+        &::placeholder{
+            font-family:$font-open-sans;
+            font-size: 14px;
+            line-height: 19px;
+            color: #a9a9a9;
+        }
+    }
+
+    &__textarea {
+        padding: 12px 16px 12px 21px;
+        max-width: 570px;
+        height: 110px;
+        background: #f9f9f9;
+        border: 1px solid #d1d1d1;
+        border-radius: 12px;
+
+        &::placeholder{
+            font-family:$font-open-sans;
+            font-size: 14px;
+            line-height: 19px;
+            color: #a9a9a9;
+        }
+    }
+
+    &__btn {
+        max-width: 230px;
+        border-radius: 12px;
+        border: 2px solid #46760a;
+        color: #fff;
+        background: $texts-color;
+    }
+}
+
+@media screen and(max-width:850px){
+    .leave__main-row{
+        padding-left: 0;
+    }
+}
+
+@media screen and(max-width:576px){
+    .leave__row{
+        flex-direction: column;
+    }
+    
+    .leave__inputs-user{
+        width: 100%;
+    }
+}

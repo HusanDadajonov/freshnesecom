@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson</title>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/flexboxgrid.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="hero__header-top header-top">
+          <div class="header-top__container container">
+            <div class="header-top__row row between-xs middle-xs">
+              <ul class="header-top__list">
+                <li class="header-top__item">
+                  <a class="header-top__link" href="#">Chat with us</a>
+                </li>
+                <li class="header-top__item">
+                  <a class="header-top__link header-top__link--tel" href="tel:+420336775664">+420 336 775 664</a>
+                </li>
+                <li class="header-top__item">
+                  <a class="header-top__link header-top__link--email" href="mailto:info@freshnesecom.com">info@freshnesecom.com</a>
+                </li>
+              </ul>
+              <ul class="header-top__list">
+                <li class="header-top__item">
+                  <a class="header-top__link" href="#">Blog</a>
+                </li>
+                <li class="header-top__item">
+                  <a class="header-top__link" href="#">About Us</a>
+                </li>
+                <li class="header-top__item">
+                  <a class="header-top__link" href="#">Careers</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <header class="hero__header header">
+          <div class="header__container container">
+            <div class="header__row row between-xs middle-xs">
+              <a class="header__logo-link" href="index.html">
+                <img class="header__logo" src="img/logo.svg" alt="logo-img" width="177" height="18">
+              </a>
+              <form class="header__form form" action="https://echo.htmlacademy.ru/" method="post">
+                <select class="form__select" name="categories" value="All categories">
+                  <option class="form__option" selected disabled hidden>All categories</option>
+                  <option class="form__option">Bakery</option>
+                  <option class="form__option">Fruit and vegetables</option>
+                  <option class="form__option">Meat and fish</option>
+                  <option class="form__option">Drinks</option>
+                  <option class="form__option">Kitchen</option>
+                </select>
+                <label class="form__label" for="search">
+                  <input class="form__input" type="search" name="searched-food" id="search" placeholder="Search Products, categories ...">
+                </label>
+                <button class="form__btn">
+                  <img src="img/search.svg" alt="search-icon" width="15" height="15">
+                </button>
+              </form>
+              <div class="row middle-xs">
+                <button class="header__btn">
+                  <img src="img/user.svg" alt="user-icon">
+                </button>
+                <button class="header__btn">
+                  <img src="img/bag.svg" alt="bag-icon">
+                  <span class="header__count">4</span>
+                </button>
+                <button class="header__menu">
+                  <div class="line-box">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </header>
+        <nav class="hero__nav nav">
+          <div class="nav__container container">
+            <ul class="nav__list row between-xs middle-xs">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Bakery</a>
+                <ul class="nav__drop-down drop-down">
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Fruit and vegetables</a>
+                <ul class="nav__drop-down drop-down">
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Meat and fish</a>
+                <ul class="nav__drop-down drop-down">
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Drinks</a>
+                <ul class="nav__drop-down drop-down">
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Kitchen</a>
+                <ul class="nav__drop-down drop-down">
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Special nutrition</a>
+                <ul class="nav__drop-down drop-down">
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Baby</a>
+                <ul class="nav__drop-down drop-down">
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Pharmacy</a>
+                <ul class="nav__drop-down drop-down">
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                  <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </section>
+    <main>
+        <section class="detail-blog__heading heading">
+            <div class="container">
+                <p class="fruits__desc"><span>Homepage / Fruit and vegetables /</span> Product ti tle</p>
+                <div class="heading__img-box">
+                        <div class="heading__row row">
+                            <ul class="heading__list">
+                                <li class="heading__item row middle-xs between-xs">
+                                    <p class="heading__desc">Date</p>
+                                    <a class="heading__link" href="#">22. 6. 2020</a>
+                                </li>
+                                <li class="heading__item row middle-xs between-xs">
+                                    <p class="heading__desc">Category:</p>
+                                    <a class="heading__link" href="#">Dinner</a>
+                                </li>
+                                <li class="heading__item row middle-xs between-xs">
+                                    <p class="heading__desc">Author</p>
+                                    <a class="heading__link" href="#">Admin</a>
+                                </li>
+                            </ul>
+                            <h2 class="heading__title">Space for your heading, can be larger so don’t worry - large heading looks better</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tags">
+            <div class="tags__container container">
+                <div class="tags__row row">
+                    <div class="tags__food">
+                        <h2 class="tags__title">Tags</h2>
+                        <ul class="tags__list row middle-xs">
+                            <li class="tags__item">
+                                <a class="tags__link" href="#">Food</a>
+                            </li>
+                            <li class="tags__item">
+                                <a class="tags__link" href="#">Recepies</a>
+                            </li>
+                            <li class="tags__item">
+                                <a class="tags__link" href="#">Fresh</a>
+                            </li>
+                            <li class="tags__item">
+                                <a class="tags__link"  href="#">Vegetable</a>
+                            </li>
+                        </ul>
+                        <button class="tags__btn btn" type="button">Back to Blog</button>
+                    </div>
+                    <div class="tags__texts">
+                        <p class="tags__desc">There’s nothing like a warm cup of tea to start your morning—or maybe you’re all about an iced hibiscus on a sunny Saturday afternoon. Whether you’re just craving chamomile or are looking to ditch your coffee dependency, here’s our go-to guide on incorporating a few new teas into your daily routine! </p>
+                        <h3 class="tags__time">Morning Ritual // <time>9:00 AM</time></h3>
+                        <p class="tags__desc">Want that extra morning energy without the caffeine jitters? Switch out your morning mug of coffee for a warm, energizing cup of earl grey. Serve as is or stir in some milk and honey for extra coziness. If you want to spice things up, try chai tea instead! The combination of cinnamon, cardamom, and ginger smells amazing and gives you that nice little flavor kick to start your day off right.</p>
+                        <h3 class="tags__time">Mid-day Boost // <time>2:00 PM</time></h3>
+                        <p class="tags__desc">If you’re feeling a little sluggish post-lunch, beat the afternoon slump with some lemon ginger green tea. Green tea can be a great alternative to coffee in the afternoon when you want that little boost of energy. An added benefit: lemon and ginger work together to aid digestion which is especially helpful after lunch.</p>
+                        <p class="tags__desc">If you’re not into hot drinks, opt-in for a fruity iced green tea instead. Steep some honeydew or peach green tea in hot water for a few minutes and then pour over ice until it’s nice and cool. Enjoy with a slice of lemon, and you’ll feel refreshed and ready to tackle any task. </p>
+                        <h3 class="tags__time">Evening Calm // <time>8:00 PM</time></h3>
+                        <p class="tags__desc">Slip on some fuzzy socks, light your favorite candles, and fire up the kettle—it’s time to wind down after a long day. Grab yourself a soothing cup of lavender <a href="#">chamomile tea</a> and indulge in some well-deserved self-love. </p>
+                        <ul class="tags__icons icons row">
+                            <li class="icons__item">
+                                <h3 class="icons__title">Share</h3>
+                            </li>
+                            <li class="icons__item">
+                                <a  class="row middle-xs icons__link" href="#" target="_blank">
+                                    <i class='bx bxl-facebook-square'></i>
+                                    <p class="icons__desc">Facebook</p>
+                                </a>
+                            </li>
+                            <li class="icons__item">
+                                <a  class="row middle-xs icons__link" href="#" target="_blank">
+                                    <i class='bx bxl-pinterest' ></i>
+                                    <p class="icons__desc">Pinterest</p>
+                                </a>
+                            </li>
+                            <li class="icons__item">
+                                <a  class="row middle-xs icons__link" href="#" target="_blank">
+                                    <i class='bx bxl-twitter' ></i>
+                                    <p class="icons__desc">Twitter</p>
+                                </a>
+                            </li>
+                            <li class="icons__item">    
+                                <a  class="row middle-xs icons__link" href="#" target="_blank">
+                                    <i class='bx bxl-linkedin' ></i>
+                                    <p class="icons__desc">LinkedIn</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="leave">
+            <div class="leave__container container">
+                <div class="leave__main-row">
+                    <h2 class="leave__title">Leave a reply</h2>
+                    <p class="leave__desc">Allrady have an account? <a class="leave__sing-in" href="#">Sign in</a> to leave a reply.</p>
+                    <form class="leave__form" action="https://echo.htmlacademy.ru/" method="post">
+                        <div class="leave__row row">
+                            <div class="leave__inputs-box leave__inputs-user">
+                                <label class="leave__label" for="user-name">Name</label>
+                                <input class="leave__input" type="text" name="user-name" id="user-name" required placeholder="Name">
+                            </div>
+                            <div class="leave__inputs-box leave__inputs-user">
+                                <label class="leave__label" for="user-name">Email address</label>
+                                <input class="leave__input" type="text" name="user-name" id="user-name" required placeholder="Email addess">
+                            </div>
+                        </div>
+                            <div class="leave__inputs-box leave__inputs--save-comment">
+                                <input class="filtres__inp filtres__inp--check" type="checkbox" name="save-email" id="save">
+                                <label class="filtres__label filtres__inp--label" for="save">Save my name and email in this browser for a next time comment.</label>
+                            </div>
+                            <div class="leave__inputs-box">
+                                <label class="leave__label" for="user-message">Comment</label>
+                                <textarea class="leave__textarea" name="user-message" id="user-message" placeholder="Space for your comments"></textarea>
+                            </div>
+                            <button class="leave__btn btn">Send a comment</button>
+                    </form>
+                    <div class="leave__comments comments">
+                        <h2 class="comments__title">Comments</h2>
+                        <div class="comments__box">
+                            <div class="comments__user">
+                                <div class="row middle-xs">
+                                    <h3 class="comments__name">Author</h3>
+                                    <span class="comments__spam">Admin</span>
+                                </div>
+                                <time class="comments__time" datetime="22-06-2020">22. 6. 2020</time>
+                            </div>
+                            <p class="comments__desc">Hi everyone, <br> we have been working hard with the team bringing a new articles. It has passed a few months till we released it in case of traveling and shooting, hopefully you’ll love it.</p>
+                        </div>
+                        <div class="comments__box">
+                            <div class="comments__user">
+                                <div class="row middle-xs">
+                                    <h3 class="comments__name">User</h3>
+                                    <span class="comments__spam">Customer</span>
+                                </div>
+                                <time class="comments__time" datetime="22-06-2020">22. 6. 2020</time>
+                            </div>
+                            <p class="comments__desc">Don’t worry about that, we are happy to read a new stories. The time we had to wait was crazy, but the results are awesome! You did an epic job. Now I just need to a buy one.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="topics">
+            <div class="topics__container container">
+                <div class="row middle-xs between-xs">
+                    <h2 class="customers__title">Related topics</h2>
+                    <button class="customers__btn btn">Button</button>
+                </div>
+                <ul class="topics__list row between-xs">
+                    <li class="topics__item col-md-3 col-sm-6 col-xs-12">
+                        <div class="topics__img-box">
+                            <img src="/img/fast-food.png" alt="foo">
+                        </div>
+                        <span class="comments__spam">Tag</span>
+                        <h3 class="topics__title">Space for your heding is here, write what you need</h3>
+                        <p class="topics__desc">Author <time datetime="15-06-2020">15. 6. 2020</time></p>
+                    </li> 
+                    <li class="topics__item col-md-3 col-sm-6 col-xs-12">
+                        <div class="topics__img-box">
+                            <img src="/img/fast-food.png" alt="foo">
+                        </div>
+                        <span class="comments__spam">Tag</span>
+                        <h3 class="topics__title">Space for your heding is here, write what you need</h3>
+                        <p class="topics__desc">Author <time datetime="15-06-2020">15. 6. 2020</time></p>
+                    </li> 
+                    <li class="topics__item col-md-3 col-sm-6 col-xs-12">
+                        <div class="topics__img-box">
+                            <img src="/img/fast-food.png" alt="foo">
+                        </div>
+                        <span class="comments__spam">Tag</span>
+                        <h3 class="topics__title">Space for your heding is here, write what you need</h3>
+                        <p class="topics__desc">Author <time datetime="15-06-2020">15. 6. 2020</time></p>
+                    </li> 
+                    <li class="topics__item col-md-3 col-sm-6 col-xs-12">
+                        <div class="topics__img-box">
+                            <img src="/img/fast-food.png" alt="foo">
+                        </div>
+                        <span class="comments__spam">Tag</span>
+                        <h3 class="topics__title">Space for your heding is here, write what you need</h3>
+                        <p class="topics__desc">Author <time datetime="15-06-2020">15. 6. 2020</time></p>
+                    </li> 
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container">
+          <ul class="footer__list row between-xs">
+            <li class="footer__item footer-about col-md-3 col-sm-6 col-xs-12">
+              <h2 class="footer-about__title">Get in touch</h2>
+              <ul class="footer-about__list">
+                <li class="footer-about__item"><a class="footer-about__link" href="#">About Us</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#">Careers</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#">Press Releases</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li class="footer__item footer-about col-md-3 col-sm-6 col-xs-12">
+              <h2 class="footer-about__title">Connections</h2>
+              <ul class="footer-about__list">
+                <li class="footer-about__item"><a class="footer-about__link" href="#" target="_blank">Facebook</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#" target="_blank">Facebook</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#" target="_blank">Instagram</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#" target="_blank">Youtube</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#" target="_blank">LinkedIn</a></li>
+              </ul>
+            </li>
+            <li class="footer__item footer-about col-md-3 col-sm-6 col-xs-12">
+              <h2 class="footer-about__title">Earnings</h2>
+              <ul class="footer-about__list">
+                <li class="footer-about__item"><a class="footer-about__link" href="#">Become an Affiliate</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#">Advertise your product</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#">Sell on Market</a></li>
+              </ul>
+            </li>
+            <li class="footer__item footer-about col-md-3 col-sm-6 col-xs-12">
+              <h2 class="footer-about__title">Account</h2>
+              <ul class="footer-about__list">
+                <li class="footer-about__item"><a class="footer-about__link" href="#">Your account</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#">Returns Centre</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#">100 % purchase protection</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#" target="_blank">Chat with us</a></li>
+                <li class="footer-about__item"><a class="footer-about__link" href="#">Help</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="row middle-xs footer__product-tags product-tags">
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Beans</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Carrots</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Apples</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Garlic</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Mushrooms</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Tomatoes</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Chilli peppers</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Broccoli</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Watermelons</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Oranges</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Bananas</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Grapes</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Cherries</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Meat</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Seo tag</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Fish</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Seo tag</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Fresh food</a>
+              </li>
+              <li class="product-tags__item">
+                <a class="product-tags__link" href="#" target="_blank">Lemons</a>
+              </li>
+          </ul>
+          <p class="footer__desc">Copyright © 2020 petrbilek.com</p>
+        </div>
+    </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

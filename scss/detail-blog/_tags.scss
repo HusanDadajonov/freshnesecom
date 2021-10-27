@@ -1,0 +1,101 @@
+.tags {
+
+    &__container {
+    }
+
+    &__row {
+        justify-content: center;
+    }
+
+    &__food{
+        max-width: 168px;
+    }
+
+    &__texts{
+        padding-left: 20px;
+    }
+
+    &__title {
+        margin: 0 0 16px 0;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: $color-primary;
+    }
+
+    &__list {
+        @include list-unstyled;
+    }
+
+    &__item{
+        margin-bottom: 8px;
+
+        &:not(:last-child){
+            margin-right: 8px;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color:$texts-color;
+        background: #f4f8ec;
+        border-radius: 12px;
+        padding: 4px 10px;
+    }
+
+    &__btn {
+        position: relative;
+        padding-left: 20px;
+        &::before{
+            content: "";
+            width: 12px;
+            height: 12px;
+            position:absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0,-50%);
+            background-image: url("../../img/back-arrow.svg");
+        }
+    }
+
+    &__desc {
+        max-width: 570px;
+        font-family: $font-open-sans;
+        margin: 0 0 48px 0;
+        font-size: 17px;
+        line-height: 23px;     
+        color: $color-primary;  
+    }
+
+    &__time {
+        margin: 0 0 12px 0;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: $color-primary;
+    }
+
+    &__desc a{
+        display: inline-block;
+        color: $color-primary;
+    }
+}
+
+
+@media screen and(max-width:850px){
+    .tags__food{
+        max-width: 100%;
+    }
+
+    .tags__row{
+        flex-direction: column-reverse;
+    }
+
+    .tags__texts{
+        padding-left: 0;
+    }
+}

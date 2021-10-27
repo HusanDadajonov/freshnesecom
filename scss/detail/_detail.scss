@@ -246,6 +246,9 @@
     .detail__img-box{
         max-width: 100%;
     }
+    .detail__col{
+        padding-left: 0 !important; 
+    }
 }
 
 @media screen and (max-width:768px){
