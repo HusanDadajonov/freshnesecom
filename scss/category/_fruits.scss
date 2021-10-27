@@ -1,16 +1,25 @@
 .fruits {
     padding: 16px 0;
 
-    &__desc {
+    &__top-link {
         font-family: $font-open-sans;
         margin: 0 0 16px 0;
         font-size: 12px;
         line-height: 16px;
+        color: #a9a9a9;
+        text-decoration: none;
+    }
+
+    &__top-link--active{
         color: $color-primary;
     }
 
-    &__desc span{
-        color: #a9a9a9;
+    &__top-list{
+        @include list-unstyled;
+    }
+    
+    &__top-item:not(:last-child){
+        margin-right: 8px;
     }
 
     &__row {
