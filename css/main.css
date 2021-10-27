@@ -2966,7 +2966,6 @@ img {
 
 @media screen and (max-width: 576px) {
   .heading__title {
-    text-align: center;
     font-size: 20px;
     line-height: 120%;
   }
