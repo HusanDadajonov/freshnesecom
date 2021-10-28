@@ -1,0 +1,30 @@
+.safe {
+
+    &::before{
+        content: "";
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        background-image: url("../../img/safe-img.svg");
+        background-size: 32px 32px;
+        background-repeat: no-repeat;
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        margin: 0;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: $color-primary;
+    }
+
+    &__desc {
+        max-width: 215px;
+        font-family: $font-open-sans;
+        margin: 0;
+        font-size: 12px;
+        line-height: 16px;
+        color: #a9a9a9;
+    }
+}

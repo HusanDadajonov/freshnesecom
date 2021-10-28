@@ -1,0 +1,152 @@
+.order {
+    padding: 32px 16px;
+    background: #fff;
+    border: 1px solid #d1d1d1;
+    border-radius: 12px;
+
+    &__row{
+        border-bottom: 1px solid #f9f9f9;
+        margin-bottom: 32px;
+    }
+
+    &__title {
+        margin: 0 0 5px 0;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+        color: $color-primary;
+    }
+
+    &__desc {
+        font-family: $font-open-sans;
+        margin: 0 0 40px 0;
+        font-size: 12px;
+        line-height: 16px;
+        color: #a9a9a9; 
+    }
+
+    &__img-box {
+        margin-right: 16px;
+        width: 100px;
+        height: 67px;
+        background: #f9f9f9;
+        border-radius: 12px;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 12px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        position:absolute;
+        object-fit: cover;
+    }
+
+    &__product-title {
+        margin: 0 0 5px 0;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        color: $color-primary
+    }
+
+    &__list {
+        @include list-unstyled;
+    }
+
+    &__item:not(:last-child){
+        margin-bottom: 7px;
+    }
+
+    &__about{
+        width: 75px;
+        margin: 0;
+        font-family: $font-open-sans;
+        color: #a9a9a9;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    &__about-desc {
+        font-family: $font-open-sans;
+        margin: 0;
+        font-size: 12px;
+        line-height: 16px;
+        color:$color-primary;
+        
+    }
+
+	&__desc-list {
+        @include list-unstyled;
+	}
+
+	&__desc-item{
+        padding-left: 18px;
+        position: relative;
+
+        &:not(:last-child){
+            margin-bottom: 8px;
+        } 
+
+        &::before{
+            content: "";
+            width: 12px;
+            height: 12px;
+            position:absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0,-50%);
+            background-size: 12px 12px;
+            background-repeat: no-repeat;
+        }
+
+        &:nth-child(1)::before{
+            background-image: url("../../img/wish-heart-red.svg");
+        } 
+
+        &:nth-child(2)::before{
+            background-image: url("../../img/compare.svg");
+        } 
+
+        &:nth-child(3)::before{
+            background-image: url("../../img/remove.svg");
+        } 
+	}
+
+}
+
+.order .bxs-star{
+    color: #fdbc15;
+    margin-bottom: 10px;
+}
+
+.order .bx-star{
+    color: #ebebeb;
+    margin-bottom: 10px;
+}
+.order .detail__select-box{
+    height: 35px;
+    padding: 7px 6px 7px 6px;
+}
+
+
+@media screen and (max-width:992px){
+    .billing-info__order-box{
+        padding-left: 0;
+    }
+
+    .billing-info__col:nth-child(1){
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .order__img-box{
+        width: 100%;
+        height: 200px;
+    }
+    .order__row{
+        padding-top: 24px;
+    }
+}

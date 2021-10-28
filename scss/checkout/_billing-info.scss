@@ -1,0 +1,110 @@
+.billing-info {
+
+	&__title {
+            margin: 0 0 5px 0;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 33px;
+            color: $color-primary;
+	}
+
+      &__btn{
+            background:$texts-color;
+            border: 2px solid #46760a;
+            border-radius: 12px;
+            color: #fff;
+            padding: 16px 48px;
+            margin-bottom: 32px;
+      }
+
+      &__order-box{
+            padding-left: 32px;
+      }
+
+      &__col{
+            padding-left: 0;
+            padding-right: 0;
+      }
+
+	&__desc {
+            font-family: $font-open-sans;
+            margin: 0 0 32px 0;
+            font-size: 12px;
+            line-height: 16px;
+            color: #a9a9a9;
+	}
+
+	&__list {
+            @include list-unstyled;
+	}
+
+	&__item {
+            width: 47%;
+            display: flex;
+            flex-direction: column;
+
+            &:nth-child(9){
+                width: 37%;
+                margin-bottom: 64px;
+            }
+	}
+
+	&__label {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            color: $color-primary;
+	}
+
+	&__input {
+            background: #f9f9f9;
+            border: 1px solid #d1d1d1;
+            border-radius: 12px;
+            padding: 11px 16px 12px 21px;
+            margin-bottom: 32px;
+
+            &::placeholder{
+                font-family: $font-open-sans;
+                font-size: 14px;
+                line-height: 19px;
+                color: #a9a9a9;
+            }
+	}
+
+	&__select {
+            background: #f9f9f9;
+            border: 1px solid #d1d1d1;
+            border-radius: 12px;
+            padding: 11px 16px 12px 21px;
+            margin-bottom: 32px;
+            -webkit-appearance: none;
+            position: relative;
+            background-image: url("../../img/select-dublicate-arrow.svg");
+            background-repeat: no-repeat;
+            background-size: 15px 15px;
+            background-position: right 16px center;
+
+            &:valid {
+                font-family: $font-open-sans;
+                font-size: 14px;
+                line-height: 19px;
+                color: #a9a9a9;
+            }
+	}
+
+}
+
+
+@media screen and (max-width:576px){
+      .billing-info__item{
+            width: 100%;
+      }
+
+      .billing-info__item:nth-child(9){
+            width: 100%;
+      }
+
+      .billing-method__desc{
+            display: none;
+      }
+}

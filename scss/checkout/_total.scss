@@ -1,0 +1,80 @@
+.total {
+
+    &__list {
+        @include list-unstyled;
+        margin-bottom: 32px;
+    }
+
+    &__item:not(:last-child){
+        margin-bottom: 12px;
+    }
+
+    &__decs {
+        margin: 0;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: $color-primary;
+    }
+
+    &__form {
+        position: relative;
+        background: #f9f9f9;
+        border: 1px solid #d1d1d1;
+        border-radius: 12px;
+        padding-right: 5px;
+        padding-left: 21px;
+        margin-bottom: 40px;
+    }
+
+    &__inp {
+        background: none;
+        border: none;
+        width: 100%;
+
+        &::placeholder{
+            font-family: $font-open-sans;
+            font-size: 14px;
+            line-height: 19px;
+            color: #a9a9a9;
+        }
+    }
+
+    &__btn {
+        padding: 5px;
+    }
+
+    &__order {
+        margin: 0;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: $color-primary;
+    }
+    
+    &__time {
+        font-family: $font-open-sans;
+        font-size: 12px;
+        line-height: 16px;
+        color: $texts-color;
+    }
+    
+    &__usd {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 39px;
+        color: $texts-color;
+    }
+}
+
+@media screen and (max-width:420px){
+    .total__btn{
+        position:absolute;
+        top: 28px;
+        right: 10px;
+    }
+    .total__form{
+        padding: 5px 10px;
+    }
+}

@@ -1,0 +1,59 @@
+.payment {
+    margin-bottom: 64px;
+
+    &__row{
+        margin-bottom: 32px;
+    }
+
+    &__title{
+        margin: 0;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: $color-primary;
+        position: relative;
+        padding-left: 30px;
+
+        &::before{
+            content: "";
+            position:absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0,-50%);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 6px solid $texts-color;
+        }
+    }
+
+    &__inp--card-holder{
+        width: 52%;
+    }
+
+    &__inp--expiration-date,
+    &__inp--cvc{
+        width: 18%;
+    }
+
+    &__box {
+        padding: 16px;
+        background: #fff;
+        border: 1px solid #d1d1d1;
+        border-radius: 12px;
+        margin-bottom: 32px;
+    }
+
+    &__inp-box {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:992px){
+    .payment__inp--card-holder,
+    .payment__inp--expiration-date,
+    .payment__inp--cvc{
+        width: 100%;
+    }
+}

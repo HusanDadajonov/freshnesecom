@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson</title>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/flexboxgrid.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+  <section class="hero">
+    <div class="hero__header-top header-top">
+      <div class="header-top__container container">
+        <div class="header-top__row row between-xs middle-xs">
+          <ul class="header-top__list">
+            <li class="header-top__item">
+              <a class="header-top__link" href="#">Chat with us</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header-top__link header-top__link--tel" href="tel:+420336775664">+420 336 775 664</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header-top__link header-top__link--email" href="mailto:info@freshnesecom.com">info@freshnesecom.com</a>
+            </li>
+          </ul>
+          <ul class="header-top__list">
+            <li class="header-top__item">
+              <a class="header-top__link" href="#">Blog</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header-top__link" href="#">About Us</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header-top__link" href="#">Careers</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header class="hero__header header">
+      <div class="header__container container">
+        <div class="header__row row between-xs middle-xs">
+          <a class="header__logo-link" href="index.html">
+            <img class="header__logo" src="img/logo.svg" alt="logo-img" width="177" height="18">
+          </a>
+          <form class="header__form form" action="https://echo.htmlacademy.ru/" method="post">
+            <select class="form__select" name="categories" value="All categories">
+              <option class="form__option" selected disabled hidden>All categories</option>
+              <option class="form__option">Bakery</option>
+              <option class="form__option">Fruit and vegetables</option>
+              <option class="form__option">Meat and fish</option>
+              <option class="form__option">Drinks</option>
+              <option class="form__option">Kitchen</option>
+            </select>
+            <label class="form__label" for="search">
+              <input class="form__input" type="search" name="searched-food" id="search" placeholder="Search Products, categories ...">
+            </label>
+            <button class="form__btn">
+              <img src="img/search.svg" alt="search-icon" width="15" height="15">
+            </button>
+          </form>
+          <div class="row middle-xs">
+            <button class="header__btn">
+              <img src="img/user.svg" alt="user-icon">
+            </button>
+            <button class="header__btn">
+              <img src="img/bag.svg" alt="bag-icon">
+              <span class="header__count">4</span>
+            </button>
+            <button class="header__menu">
+              <div class="line-box">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="hero__nav nav">
+      <div class="nav__container container">
+        <ul class="nav__list row between-xs middle-xs">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Bakery</a>
+            <ul class="nav__drop-down drop-down">
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Fruit and vegetables</a>
+            <ul class="nav__drop-down drop-down">
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Meat and fish</a>
+            <ul class="nav__drop-down drop-down">
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Drinks</a>
+            <ul class="nav__drop-down drop-down">
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Kitchen</a>
+            <ul class="nav__drop-down drop-down">
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Special nutrition</a>
+            <ul class="nav__drop-down drop-down">
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Baby</a>
+            <ul class="nav__drop-down drop-down">
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Pharmacy</a>
+            <ul class="nav__drop-down drop-down">
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+              <li class="drop-down__item"><a class="drop-down__link" href="#">Bakery</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="fruits">
+        <div class="fruits__container container">
+              <ul class="fruits__top-list row middle-xs">
+                <li class="fruits__top-item"><a class="fruits__top-link" href="index.html">Homepage /</a></li>
+                <li class="fruits__top-item"><a class="fruits__top-link fruits__top-link--active" href="category.html">Checkout page</a></li>
+              </ul>
+        </div>
+    </div>
+  </section>
+  <main>
+      <section class="billing-info">
+        <div class="billing-info__container container">
+            <div class="row between-xs">
+              <div class="billing-info__col col-md-7 col-xs-12">
+                <h2 class="billing-info__title">Billing info</h2>
+                <div class="billing-info__desc-box row between-xs">
+                    <p class="billing-info__desc">Please enter your billing info</p>
+                    <p class="billing-info__desc">Step 1 of 5</p>
+                </div>
+                <form class="billing-info__form" action="https://echo.htmlacademy.ru/" method="post">
+                    <ul class="billing-info__list row middle-xs between-xs">
+                        <li class="billing-info__item">
+                            <label class="billing-info__label" for="first-name">First name</label>
+                            <input class="billing-info__input" type="text" name="first-name" placeholder="First name" required id="first-name">
+                        </li>
+                        <li class="billing-info__item">
+                            <label class="billing-info__label" for="last-name">Last name</label>
+                            <input class="billing-info__input" type="text" name="last-name" placeholder="Last name" required id="last-name">
+                        </li>
+                        <li class="billing-info__item">
+                            <label class="billing-info__label" for="email">Email address</label>
+                            <input class="billing-info__input" type="email" name="email address" placeholder="Email address" required id="email">
+                        </li>
+                        <li class="billing-info__item">
+                            <label class="billing-info__label" for="phone-number">Phone number</label>
+                            <input class="billing-info__input" type="number" name="user-phone-number" placeholder="Phone number" required id="phone-number">
+                        </li>
+                        <li class="billing-info__item">
+                            <label class="billing-info__label" for="address">Address</label>
+                            <input class="billing-info__input" type="text" name="user-adrres" placeholder="Address" required id="address">
+                        </li>
+                        <li class="billing-info__item">
+                            <label class="billing-info__label" for="town-city">Town / City</label>
+                            <input class="billing-info__input" type="text" name="Town or City" placeholder="Town or city" required id="town-city">
+                        </li>
+                        <li class="billing-info__item">
+                            <label class="billing-info__label" for="state-country">State / Country</label>
+                            <select class="billing-info__select" name="state-country" id="state-country" required>
+                                <option class="billing-info__option" >Choose a state or Country</option>
+                                <option class="billing-info__option">Sirdaryo</option>
+                            </select>
+                        </li>
+                        <li class="billing-info__item">
+                            <label class="billing-info__label" for="postal-colde">ZIP/Postal code</label>
+                            <input class="billing-info__input" type="number" name="postal-code" placeholder="Postal code or ZIP" required id="postal-colde">
+                        </li>
+                        <li class="billing-info__item">
+                            <div class="billing-info__input">
+                                <input class="filtres__inp filtres__inp--check" type="checkbox" name="show-address" id="show-address">
+                                <label class="filtres__label filtres__inp--label" for="show-address">Ship to a different address?</label>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="billing-info__method billing-method">
+                        <h2 class="billing-info__title">Billing method</h2>
+                        <div class="billing-info__desc-box row between-xs">
+                            <p class="billing-info__desc">Please enter your billing info</p>
+                            <p class="billing-info__desc">Step 2 of 5</p>
+                        </div>    
+                        <div class="billing-method__box row between-xs middle-xs">
+                            <div>
+                                <input class="filtres__inp filtres__inp--radio" type="radio" name="filtre-text" id="fedex">
+                                <label class="billing-info__label filtres__label filtres__label--radio" for="fedex">FedEx</label>
+                            </div>
+                            <p class="billing-method__desc"><span class="billing-method__usd">+32 USD</span> Additional price</p>
+                            <img src="img/fedex.svg" alt="fedex">
+                        </div>
+                        <div class="billing-method__box row between-xs middle-xs">
+                            <div>
+                                <input class="filtres__inp filtres__inp--radio" type="radio" name="filtre-text" id="dhl">
+                                <label class="billing-info__label filtres__label filtres__label--radio" for="dhl">DHL</label>
+                            </div>
+                            <p class="billing-method__desc"><span class="billing-method__usd">+32 USD</span> Additional price</p>
+                            <img src="img/dhl.svg" alt="fedex">
+                        </div>
+                    </div>
+                    <div class="billing-info__payment payment">
+                        <h2 class="billing-info__title">Payment method</h2>
+                        <div class="billing-info__desc-box row between-xs">
+                            <p class="billing-info__desc">Please enter your billing info</p>
+                            <p class="billing-info__desc">Step 3 of 5</p>
+                        </div>
+                        <div class="payment__box">
+                                <div class="payment__row row middle-xs between-xs">
+                                    <input class="filtres__inp filtres__inp--radio" type="radio" name="filtre-text" id="credit-card" checked>
+                                    <label class="billing-info__label filtres__label filtres__label--radio" for="credit-card" >Credit card</label>
+                                    <img src="img/visa.svg" alt="visa-img">
+                                </div>
+                                <div class="payment__inp-box">
+                                    <label class="billing-info__label" for="card-number">Card number</label>
+                                    <input class="billing-info__input" type="number" id="card-number" name="card-number" required placeholder="Card number">
+                                </div>
+                                <div class="row middle-xs between-xs">
+                                    <div class="payment__inp-box payment__inp--card-holder">
+                                        <label class="billing-info__label" for="card-number">Card holder</label>
+                                        <input class="billing-info__input" type="name" id="card-number" name="card-number" required placeholder="Card holder">
+                                    </div>
+                                    <div class="payment__inp-box payment__inp--expiration-date">
+                                        <label class="billing-info__label" for="card-number">Expiration date</label>
+                                        <input class="billing-info__input" type="date" id="card-number" name="card-number" required placeholder="Card holder">
+                                    </div>
+                                    <div class="payment__inp-box payment__inp--cvc">
+                                        <label class="billing-info__label" for="card-number">CVC</label>
+                                        <input class="billing-info__input" type="number" id="card-number" name="card-number" required placeholder="CVC">
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="billing-method__box row between-xs middle-xs">
+                            <div>
+                                <input class="filtres__inp filtres__inp--radio" type="radio" name="filtre-text" id="paypal">
+                                <label class="billing-info__label filtres__label filtres__label--radio" for="paypal">PayPal</label>
+                            </div>
+                            <img src="img/paypal.svg" alt="fedex">
+                        </div>
+                        <div class="billing-method__box row between-xs middle-xs">
+                            <div>
+                                <input class="filtres__inp filtres__inp--radio" type="radio" name="filtre-text" id="bitcoin">
+                                <label class="billing-info__label filtres__label filtres__label--radio" for="bitcoin">Bitcoin</label>
+                            </div>
+                            <img src="img/bitcoin.svg" alt="fedex">
+                        </div>
+                    </div>
+                    <div class="billing-info__informations informations">
+                        <h2 class="billing-info__title">Additional informations</h2>
+                        <div class="billing-info__desc-box row between-xs">
+                            <p class="billing-info__desc">Need something else? We will make it for you!</p>
+                            <p class="billing-info__desc">Step 4 of 5</p>
+                        </div>
+                        <div class="payment__inp-box">
+                            <label class="billing-info__label" for="textarea">Card number</label>
+                            <textarea class="billing-info__input informations__textarea" name="user-message" id="textarea" placeholder="Need a specific delivery day? Sending a gitf? Let’s say ..."></textarea>
+                        </div>
+                    </div>
+                    <div class="billing-info__confirmation confirmation">
+                        <h2 class="billing-info__title">Confirmation</h2>
+                        <div class="billing-info__desc-box row between-xs">
+                            <p class="billing-info__desc">We are getting to the end. Just few clicks and your order si ready!</p>
+                            <p class="billing-info__desc">Step 5 of 5</p>
+                        </div>
+                        <div class="billing-info__input confirmation__input">
+                            <input class="filtres__inp filtres__inp--check" type="checkbox" name="show-address" id="promissed">
+                            <label class="filtres__label filtres__inp--label" for="promissed">I agree with sending an Marketing and newsletter emails. No spam, promissed!</label>
+                        </div>
+                        <div class="billing-info__input confirmation__input">
+                            <input class="filtres__inp filtres__inp--check" type="checkbox" name="show-address" id="privacy">
+                            <label class="filtres__label filtres__inp--label" for="privacy">I agree with our <a class="confirmation__link" href="#">terms and conditions</a> and <a class="confirmation__link" href="#">privacy policy.</a></label>
+                        </div>
+                    </div>
+                    <button class="billing-info__btn btn">Complete order</button>
+                </form>
+                <div class="billing-info__safe safe">
+                  <h2 class="safe__title">All your data are safe</h2>
+                  <p class="safe__desc">We are using the most advanced security to provide you the best experience ever.</p>
+                </div>
+              </div>
+              <div class="billing-info__col col-md-5 col-xs-12">
+                <div class="billing-info__order-box">
+                  <div class="billing-info__order order">
+                    <h2 class="order__title">Order Summary</h2>
+                    <p class="order__desc">Price can change depending on shipping method and taxes of your state.</p>
+                    <div>
+                      <div class="row">
+                        <div class="order__img-box">
+                          <img class="order__img" src="img/fast-food.png" alt="food">
+                        </div>
+                        <div>
+                          <h3 class="order__product-title">Product title</h3>
+                          <ul class="order__list">
+                            <li class="order__item row middle-xs">
+                              <p class="order__about">Farm:</p>
+                              <p class="order__about-desc">Tharamis Farm</p>
+                            </li>
+                            <li class="order__item row">
+                              <p class="order__about">Freshness:</p>
+                              <p class="order__about-desc">1 day old</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="order__row row between-xs">
+                        <div class="row ">
+                          <ul class="order__desc-list">
+                            <li class="order__desc-item">
+                              <p class="order__about">Wishlist</p>
+                            </li>
+                            <li class="order__desc-item">
+                              <p class="order__about">Compare</p>
+                            </li>
+                            <li class="order__desc-item">
+                              <p class="order__about">Remove</p>
+                            </li>
+                          </ul>
+                          <div class="shopping__stars">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bx-star"></i>
+                            <div>
+                              <h2 class="detail__usd">36.23 USD</h2>
+                              <span class="detail__discount">48.56 USD</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="detail__select-box">
+                          <span class="detail__count">1pcs</span>
+                          <select  class="detail__select">
+                              <option value="Pcs" hidden>Pcs</option>
+                              <option >food</option>
+                              <option >food</option>
+                          </select>
+                      </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="row">
+                        <div class="order__img-box">
+                          <img class="order__img" src="img/fast-food.png" alt="food">
+                        </div>
+                        <div>
+                          <h3 class="order__product-title">Product title</h3>
+                          <ul class="order__list">
+                            <li class="order__item row middle-xs">
+                              <p class="order__about">Farm:</p>
+                              <p class="order__about-desc">Tharamis Farm</p>
+                            </li>
+                            <li class="order__item row">
+                              <p class="order__about">Freshness:</p>
+                              <p class="order__about-desc">1 day old</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="order__row row between-xs">
+                        <div class="row ">
+                          <ul class="order__desc-list">
+                            <li class="order__desc-item">
+                              <p class="order__about">Wishlist</p>
+                            </li>
+                            <li class="order__desc-item">
+                              <p class="order__about">Compare</p>
+                            </li>
+                            <li class="order__desc-item">
+                              <p class="order__about">Remove</p>
+                            </li>
+                          </ul>
+                          <div class="shopping__stars">
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                            <i class="bx bx-star"></i>
+                            <div>
+                              <h2 class="detail__usd">36.23 USD</h2>
+                              <span class="detail__discount">48.56 USD</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="detail__select-box">
+                          <span class="detail__count">1pcs</span>
+                          <select  class="detail__select">
+                              <option value="Pcs" hidden>Pcs</option>
+                              <option >food</option>
+                              <option >food</option>
+                          </select>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="order__total total">
+                      <ul class="total__list">
+                        <li class="total__item row middle-xs between-xs">
+                          <p class="total__decs">Subtotal</p>
+                          <p class="total__decs">73.98 USD</p>
+                        </li>
+                        <li class="total__item row middle-xs between-xs">
+                          <p class="total__decs">Tax</p>
+                          <p class="total__decs">17% 16.53 USD</p>
+                        </li>
+                        <li class="total__item row middle-xs between-xs">
+                          <p class="total__decs">Shipping</p>
+                          <p class="total__decs">0 USD</p>
+                        </li>
+                      </ul>
+                      <form class="total__form row middle-xs between-xs" action="https://echo.htmlacademy.ru/">
+                        <label class="total__label" for="promo-code">
+                          <input  class="total__inp" type="number" name="promo-code" placeholder="Apply promo code" required id="promo-code">
+                        </label>
+                        <button class="total__btn btn">Apply now</button>
+                      </form>
+                      <div class="row middle-xs between-xs">
+                        <div>
+                          <h3 class="total__order">Total Order</h3>
+                          <time  class="total__time" datetime="2020-06-12">Guaranteed delivery day:  June 12, 2020</time>
+                        </div>
+                        <span class="total__usd">89.84 USD</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__desc">Copyright © 2020 petrbilek.com</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
