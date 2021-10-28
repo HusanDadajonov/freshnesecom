@@ -58,6 +58,13 @@
         top: 0;
         transition: transform 0.4s ease;
     }
+
+    .header-top__row{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0);
+        bottom: 50px;
+    }
     .open-header{
         transform: translate(0,0);
     }
