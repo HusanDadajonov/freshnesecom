@@ -3868,6 +3868,7 @@ img {
   .order__img-box {
     width: 100%;
     height: 200px;
+    margin-right: 0;
   }
   .order__row {
     padding-top: 24px;
