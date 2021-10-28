@@ -1,0 +1,19 @@
+.blogv1-about {
+    padding: 48px 0;
+
+    &__item {
+        margin-bottom: 32px;
+    }
+
+    &__menu:last-child{
+        margin-top: 0;
+    }
+
+    &__category{
+        margin-bottom: 48px;
+    }
+
+    &__link{
+        color: #a9a9a9;
+    }
+}

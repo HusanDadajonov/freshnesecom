@@ -1,0 +1,24 @@
+.blogv1{
+    padding-bottom: 48px;
+    
+    &__title{
+        width: 73%;
+    }
+
+    &__col:nth-child(2){
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width:992px){
+    .blogv1__col{
+        padding: 0 !important;
+    }
+}
+
+@media screen and (max-width:576px){
+    .blogv1__title{
+        font-size: 17px;
+        line-height: 24px;
+    }
+}

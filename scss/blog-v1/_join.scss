@@ -1,0 +1,39 @@
+.join {
+
+    &__title {
+        margin: 0 0 8px 0;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: $color-primary;
+    }
+
+    &__desc {
+        max-width: 270px;
+        font-family: $font-open-sans;
+        margin: 0 0 24px 0;
+        font-size: 14px;
+        line-height: 19px;
+        color: #a9a9a9;
+    }
+
+    &__label{
+        width: 50%;
+    }
+
+    &__inp{
+        width: 100%;
+        background: none;
+        border: none;
+
+        &::placeholder{
+            font-family: $font-open-sans;
+            font-size: 14px;
+            line-height: 19px;
+            color: #a9a9a9;
+        }
+    }
+
+    &__btn {
+    }
+}
