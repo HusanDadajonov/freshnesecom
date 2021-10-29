@@ -8,6 +8,17 @@ let elListbtn = document.querySelector(".fruits__btn--list");
 let elGridbtn = document.querySelector(".fruits__btn--grid");
 let elSmallList = document.querySelector(".categories__list--small");
 let elBiglList = document.querySelector(".categories__list--big");
+let elHeaderBtn = document.querySelector(".header__btn-shop");
+let elShoppingCard = document.querySelector(".shopping-card");
+let elShoppinBtn = document.querySelector(".shopping-card__btn");
+
+elHeaderBtn.addEventListener("click" , ()=>{
+    elShoppingCard.classList.toggle("open-modal")
+})
+
+elShoppinBtn.addEventListener("click",function(){
+    elShoppingCard.classList.remove("open-modal");
+})
 
 
 elHeaderMenu.addEventListener("click",function(){

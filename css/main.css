@@ -1673,6 +1673,117 @@ img {
   border-radius: 12px;
 }
 
+.shopping-card {
+  width: 500px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background: #fff;
+  padding: 24px 16px;
+  overflow-y: scroll;
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+
+.shopping-card::-webkit-scrollbar {
+  width: 3px;
+}
+
+.shopping-card::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.shopping-card::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 20px;
+  border: 1px solid orange;
+}
+
+.shopping-card__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+  color: #151515;
+}
+
+.shopping-card__row {
+  margin-bottom: 24px;
+}
+
+.shopping-card__btn {
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  background: none;
+  border: none;
+  font-size: 12px;
+  line-height: 16px;
+  color: #d1d1d1;
+  position: relative;
+  padding-right: 30px;
+}
+
+.shopping-card__btn::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background-image: url("../../img/remove.svg");
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+}
+
+.shopping-card__subtotal {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000;
+}
+
+.shopping-card__usd {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+  color: #151515;
+  margin-bottom: 24px;
+}
+
+.shopping-card__continue {
+  margin: 0;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+}
+
+.shopping-card__btn-checkout {
+  color: #fff;
+  background: #6a983c;
+  border: 2px solid #46760A;
+  border-radius: 12px;
+}
+
+.shopping-card .detail__select-box {
+  height: 50px;
+}
+
+.open-modal {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
 .fruits {
   padding: 16px 0;
 }
