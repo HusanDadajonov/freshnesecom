@@ -7,24 +7,24 @@
     z-index: 100;
     background: #fff;
     padding: 24px 16px;
+    box-shadow: 5px 0px 23px 0px;
     overflow-y:scroll ;
-    transform: translate(100%,0);
+    transform: translate(120%,0);
     transition: transform 0.4s ease;
-
-
+        
     &::-webkit-scrollbar {
-        width: 3px;
+        width: 4px;
     }
-
+    
     &::-webkit-scrollbar-track {
         background: transparent
     }
 
     &::-webkit-scrollbar-thumb {
-        background-color: orange;
+        background-color: $texts-color;
         border-radius: 20px; 
-        border: 1px solid orange;
-    }
+        border: 1px solid $texts-color;
+    } 
 
     &__title {
         margin: 0;

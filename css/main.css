@@ -1682,9 +1682,11 @@ img {
   z-index: 100;
   background: #fff;
   padding: 24px 16px;
+  -webkit-box-shadow: 5px 0px 23px 0px;
+          box-shadow: 5px 0px 23px 0px;
   overflow-y: scroll;
-  -webkit-transform: translate(100%, 0);
-          transform: translate(100%, 0);
+  -webkit-transform: translate(120%, 0);
+          transform: translate(120%, 0);
   -webkit-transition: -webkit-transform 0.4s ease;
   transition: -webkit-transform 0.4s ease;
   transition: transform 0.4s ease;
@@ -1692,7 +1694,7 @@ img {
 }
 
 .shopping-card::-webkit-scrollbar {
-  width: 3px;
+  width: 4px;
 }
 
 .shopping-card::-webkit-scrollbar-track {
@@ -1700,9 +1702,9 @@ img {
 }
 
 .shopping-card::-webkit-scrollbar-thumb {
-  background-color: orange;
+  background-color: #6a983c;
   border-radius: 20px;
-  border: 1px solid orange;
+  border: 1px solid #6a983c;
 }
 
 .shopping-card__title {
@@ -1782,6 +1784,20 @@ img {
 .open-modal {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #25bd25;
+  border-radius: 20px;
+  border: 1px solid #25bd25;
 }
 
 .fruits {
