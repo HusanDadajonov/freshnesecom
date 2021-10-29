@@ -3396,8 +3396,8 @@ img {
 }
 
 .topics__item {
-  padding-right: 32px;
-  padding-left: 0;
+  padding-right: 0;
+  padding-left: 32px;
 }
 
 .topics__item:last-child {
@@ -4026,6 +4026,14 @@ img {
 
 .blogv1-about__link {
   color: #a9a9a9;
+}
+
+.blogv1-about__col:nth-child(2) {
+  padding-right: 0;
+}
+
+.blogv1-about__col:nth-child(1) {
+  padding-left: 0;
 }
 
 .join__title {

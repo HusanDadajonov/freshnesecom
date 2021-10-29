@@ -16,4 +16,12 @@
     &__link{
         color: #a9a9a9;
     }
+
+    &__col:nth-child(2){
+        padding-right: 0;
+    }
+
+    &__col:nth-child(1){
+        padding-left: 0;
+    }
 }
