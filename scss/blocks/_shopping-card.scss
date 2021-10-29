@@ -1,5 +1,5 @@
 .shopping-card {
-    width: 500px;
+    width: 400px;
     height: 100%;
     position:fixed;
     top: 0;
@@ -99,9 +99,16 @@
 }
 
 .shopping-card .detail__select-box{
-    height: 50px;
+    height: 32px;
+    padding: 5px;
 }
 
 .open-modal{
     transform: translate(0,0);
+}
+
+@media screen and (max-width:576px){
+    .shopping-card{
+        width: 300px;
+    }
 }

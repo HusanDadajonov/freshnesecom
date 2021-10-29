@@ -1674,7 +1674,7 @@ img {
 }
 
 .shopping-card {
-  width: 500px;
+  width: 400px;
   height: 100%;
   position: fixed;
   top: 0;
@@ -1778,12 +1778,19 @@ img {
 }
 
 .shopping-card .detail__select-box {
-  height: 50px;
+  height: 32px;
+  padding: 5px;
 }
 
 .open-modal {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+}
+
+@media screen and (max-width: 576px) {
+  .shopping-card {
+    width: 300px;
+  }
 }
 
 body::-webkit-scrollbar {
